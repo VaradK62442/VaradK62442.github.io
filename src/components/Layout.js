@@ -1,11 +1,17 @@
+import { NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
 
-function Layout({ title, children }) {
+function Layout({ children }) {
     return (
         <div class="bg-blue text-white min-h-screen flex flex-col">
             <header class="bg-crimson text-white py-4 shadow-md sticky top-0 z-50">
                 <div class="container mx-auto px-4">
-                    <h1 class="text-2xl font-bold">{title}</h1>
+                    <NavLink
+                        to="/"
+                        className="text-2xl font-bold"
+                    >
+                        Varad Kulkarni
+                    </NavLink>
                 </div>
             </header>
             <NavBar />

@@ -8,9 +8,9 @@ function AppRoutes() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Layout title="Home"><Home /></Layout>}/>
-                <Route path="/about" element={<Layout title="About"><About /></Layout>}/>
-                <Route path="/projects" element={<Layout title="Projects"><Projects /></Layout>}/>
+                <Route path="/" element={<Layout><Home /></Layout>}/>
+                <Route path="/about" element={<Layout><About /></Layout>}/>
+                <Route path="/projects" element={<Layout><Projects /></Layout>}/>
             </Routes>
         </Router>
     )
