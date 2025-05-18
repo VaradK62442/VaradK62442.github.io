@@ -1,19 +1,28 @@
+import { NavLink } from "react-router-dom";
+
+const routes = [
+    { path: "/", name: "Home" },
+    { path: "/about", name: "About" },
+    { path: "/projects", name: "Projects" },
+]
+
 function NavBar() {
     return (
-        <div className="navbar">
+        <nav>
             <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/about">About</a>
-                </li>
-                <li>
-                    <a href="/projects">Projects</a>
-                </li>
+                {routes.map((route) => (
+                        <li key={route.path}>
+                            <NavLink
+                                to={route.path}
+                                className={({ isActive }) => (isActive ? "active" : "")}
+                            >
+                                {route.name}
+                            </NavLink>
+                        </li>
+                ))}
             </ul>
-        </div>
-    );
+        </nav>
+    )
 }
 
 export default NavBar;
