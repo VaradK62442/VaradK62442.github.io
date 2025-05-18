@@ -14,7 +14,13 @@ function NavBar() {
                         <li key={route.path} class="hover:text-crimson">
                             <NavLink
                                 to={route.path}
-                                className={({ isActive }) => (isActive ? "font-bold" : "")}
+                                className={({ isActive }) =>
+                                    `inline-block px-2 py-1 ${
+                                        isActive
+                                            ? "text-white border-b-2 border-crimson"
+                                            : "text-white border-b-2 border-transparent"
+                                    }`
+                                }
                             >
                                 {route.name}
                             </NavLink>
