@@ -15,7 +15,7 @@ function Layout({ children }) {
                 </div>
             </header>
             <NavBar />
-            <main class="flex-grow container mx-auto px-4 py-6">
+            <main class="flex-grow container mx-auto px-4 py-6 max-w-5xl">
                 {children}
             </main>
             <footer class="bg-crimson text- py-4 text-center">
