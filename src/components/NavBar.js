@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "../styling/NavBar.css";
 
 const routes = [
     { path: "/", name: "Home" },
@@ -8,7 +9,7 @@ const routes = [
 
 function NavBar() {
     return (
-        <nav>
+        <nav className="navbar">
             <ul>
                 {routes.map((route) => (
                         <li key={route.path}>
