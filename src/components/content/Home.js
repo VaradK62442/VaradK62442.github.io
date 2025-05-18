@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { routes } from "../NavBar";
+import { routes } from "../config";
 
 function Home() {
     return (
