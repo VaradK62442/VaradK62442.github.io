@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom";
+import { routes } from "../NavBar";
+
 function Home() {
     return (
         <div>
@@ -5,15 +8,16 @@ function Home() {
             <p>This website is a personal portfolio to show off things I've done, things I'm working on, and generally things that I'm passionate about!</p>
             <br />
             <ul className="list-disc pl-5">
-                <li>
-                    <span class="font-bold">About:</span> A little bit about me, my background, and my interests.
-                </li>
-                <li>
-                    <span class="font-bold">Experience:</span> A brief summary of my experience.
-                </li>
-                <li>
-                    <span class="font-bold">Projects:</span> A thorough showcase of my projects.
-                </li>
+                {routes
+                    .filter((route) => route.description)
+                    .map((route) => (
+                        <li key={route.path}>
+                            <NavLink to={route.path}>
+                                <span class="font-bold">{route.name}</span>
+                            </NavLink>
+                            : {route.description}
+                        </li>
+                ))}
             </ul>
         </div>
     );
