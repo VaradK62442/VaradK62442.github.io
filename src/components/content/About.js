@@ -8,7 +8,7 @@ function About() {
                 I am currently in my fourth year of a BSc (Hons) Computer Science and Mathematics degree at the University of Glasgow, graduating in 2026.
                 I love problem solving and enjoy teaching and leading others.
             </p>
-            <div class="mt-6 grid grid-cols-2 gap-4">
+            <div class="mt-6 grid grid-cols-3 gap-4">
                 <Social
                     icon="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                     link="https://github.com/VaradK62442"
@@ -20,6 +20,12 @@ function About() {
                     link="https://www.linkedin.com/in/varad-kulkarni-344b39206/"
                     title="LinkedIn"
                     description="Connect with me on LinkedIn."
+                />
+                <Social
+                    icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg"
+                    link="mailto:varadkulk123@gmail.com"
+                    title="Email"
+                    description="Get in touch with me via email."
                 />
             </div>
         </div>
