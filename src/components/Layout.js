@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
+import Social from "./content/Social"
 
 function Layout({ children }) {
     return (
@@ -17,6 +18,26 @@ function Layout({ children }) {
             <NavBar />
             <main class="flex-grow container mx-auto px-4 py-6 max-w-5xl">
                 {children}
+                <div class="mt-6 grid grid-cols-3 gap-4">
+                    <Social
+                        icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        link="https://www.linkedin.com/in/varad-kulkarni-344b39206/"
+                        title="LinkedIn"
+                        description="Connect with me on LinkedIn."
+                    />
+                    <Social
+                        icon="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                        link="https://github.com/VaradK62442"
+                        title="GitHub"
+                        description="Check out my projects and contributions."
+                    />
+                    <Social
+                        icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg"
+                        link="mailto:varadkulk123@gmail.com"
+                        title="Email"
+                        description="Get in touch with me via email."
+                    />
+                </div>
             </main>
             <footer class="bg-crimson text- py-4 text-center">
                 <p>&copy; 2025 Varad Kulkarni. All rights reserved.</p>
