@@ -64,7 +64,7 @@ function Experience() {
                 {experiences.map((experience, index) => (
                     <li key={index} id={experience.id} className="border border-crimson rounded-md shadow-md">
                         <button
-                            className="w-full text-left p-4 bg-crimson font-semibold text-white"
+                            className="w-full text-left p-4 bg-crimson font-semibold text-white hover:bg-crimson-600 transition shadow"
                             onClick={() => toggleDropdown(index)}
                         >
                             {experience.title}
