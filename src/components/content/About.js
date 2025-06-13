@@ -1,9 +1,9 @@
-import AboutPara from "./AboutPara";
+import ParagraphSection from "./ParagraphSection";
 
 function About() {
     return (
         <div class="flex flex-col justify-center items-center">
-            <AboutPara
+            <ParagraphSection
                 paragraph = {
                     "I am a highly organised and motivated student, with a passion in learning new skills and academic topics.\n" +
                     "I am currently in my fourth year of a BSc (Hons) Computer Science and Mathematics degree at the University of Glasgow, graduating in 2026.\n" +
@@ -12,7 +12,7 @@ function About() {
                 image = "pfp.JPG"
                 position = "left"
             />
-            <AboutPara
+            <ParagraphSection
                 paragraph={
                     "The areas of computing I'm most interested in are automata, theoretical computing, and robotics.\n" +
                     "I love the theory behind computer systems and enjoyed learning about finite state automata, and formal specification of programming languages.\n" +
@@ -21,7 +21,7 @@ function About() {
                 image = "turingMachine.png"
                 position = "right"
             />
-            <AboutPara
+            <ParagraphSection
                 paragraph = {
                     "I am the Head Software Engineer for the University of Glasgow Racing's Driverless sub-team.\n" +
                     "This involves managing and leading the technical side of the development of driverless software,\n" +
@@ -32,7 +32,7 @@ function About() {
                 image = "ugr.jpeg"
                 position = "left"
             />
-            <AboutPara
+            <ParagraphSection
                 paragraph = {
                     "I have also been working on researching into various Stable Matching problems. This has grown my\n" +
                     "interest in the theoretical side of computer science, since this research involved designing and analysing algorithms,\n" +

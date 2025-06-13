@@ -1,4 +1,4 @@
-function AboutPara({ paragraph, image, position }) {
+function ParagraphSection({ paragraph, image, position }) {
     return (
         <div
             class={`flex items-center mb-4 ${
@@ -17,4 +17,4 @@ function AboutPara({ paragraph, image, position }) {
     );
 }
 
-export default AboutPara;
+export default ParagraphSection;
