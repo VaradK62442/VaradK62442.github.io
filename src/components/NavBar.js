@@ -1,7 +1,33 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { routes } from "./config";
+import { useEffect } from "react";
 
 function NavBar() {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            const currentPath = window.location.pathname;
+            const currentIndex = routes.findIndex(route => route.path === currentPath);
+
+            if (event.key === "ArrowRight" || event.key === "l") {
+                // Navigate to the next route
+                const nextIndex = (currentIndex + 1) % routes.length;
+                navigate(routes[nextIndex].path);
+            } else if (event.key === "ArrowLeft" || event.key === "h") {
+                // Navigate to the previous route
+                const prevIndex = (currentIndex - 1 + routes.length) % routes.length;
+                navigate(routes[prevIndex].path);
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [navigate]);
+
     return (
         <nav class="bg-blue-400 text-white py-2 shadow">
             <ul class="flex space-x-4 justify-center">
