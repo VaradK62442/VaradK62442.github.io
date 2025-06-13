@@ -1,4 +1,5 @@
 import ParagraphSection from "./ParagraphSection";
+import { NavLink } from "react-router-dom";
 
 function About() {
     return (
@@ -21,26 +22,42 @@ function About() {
                 image = "turingMachine.png"
                 position = "right"
             />
-            <ParagraphSection
-                paragraph = {
-                    "I am the Head Software Engineer for the University of Glasgow Racing's Driverless sub-team.\n" +
-                    "This involves managing and leading the technical side of the development of driverless software,\n" +
-                    "which we compete with at the Formula Student UK competition.\n" +
-                    "Working on and contributing to this project is what sparked my interest in robotics,\n" +
-                    "since we use the Robotics Operating System (ROS2) as our main framework.\n"
-                }
-                image = "ugr.jpeg"
-                position = "left"
-            />
-            <ParagraphSection
-                paragraph = {
-                    "I have also been working on researching into various Stable Matching problems. This has grown my\n" +
-                    "interest in the theoretical side of computer science, since this research involved designing and analysing algorithms,\n" +
-                    "proving properties about algorithms, implementing and analysing Integer Programming models, and more.\n"
-                }
-                image = "spapIP.png"
-                position = "right"
-            />
+            <NavLink to="/experience#ugr-driverless">
+                <ParagraphSection
+                    paragraph = {
+                        "I am the Head Software Engineer for the University of Glasgow Racing's Driverless sub-team.\n" +
+                        "This involves managing and leading the technical side of the development of driverless software,\n" +
+                        "which we compete with at the Formula Student UK competition.\n" +
+                        "Working on and contributing to this project is what sparked my interest in robotics,\n" +
+                        "since we use the Robotics Operating System (ROS2) as our main framework.\n"
+                    }
+                    image = "ugr.jpeg"
+                    position = "left"
+                />
+            </NavLink>
+            <NavLink to="/experience#stable-matching-research">
+                <ParagraphSection
+                    paragraph = {
+                        "I have also been working on researching into various Stable Matching problems. This has grown my\n" +
+                        "interest in the theoretical side of computer science, since this research involved designing and analysing algorithms,\n" +
+                        "proving properties about algorithms, implementing and analysing Integer Programming models, and more.\n"
+                    }
+                    image = "spapIP.png"
+                    position = "right"
+                />
+            </NavLink>
+            <NavLink to="/experience#essays">
+                <ParagraphSection
+                    paragraph = {
+                        "I have previously written essays on various topics of interest in mathematics and computing.\n" +
+                        "These essays cover a range of topics, including Ability Score generation in Dungeons and Dragons,\n" +
+                        "methods of approximating pi, and analysing resource distribution in Catan.\n" +
+                        "These essays can be found on my Medium page, linked below."
+                    }
+                    image = "Mlogo.png"
+                    position = "left"
+                />
+            </NavLink>
         </div>
     );
 }

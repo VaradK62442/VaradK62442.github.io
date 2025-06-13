@@ -19,9 +19,9 @@ function NavBar() {
                 const prevIndex = (currentIndex - 1 + routes.length) % routes.length;
                 navigate(routes[prevIndex].path);
             } else if (event.key === "j") {
-                window.scrollBy({ top: 50, behavior: "smooth" });
+                window.scrollBy({ top: 75, behavior: "smooth" });
             } else if (event.key === "k") {
-                window.scrollBy({ top: -50, behavior: "smooth" });
+                window.scrollBy({ top: -75, behavior: "smooth" });
             }
         };
 
