@@ -14,18 +14,23 @@ function Home() {
                 position = "left"
             />
             <br />
-            <ul className="list-disc pl-5">
-                {routes
-                    .filter((route) => route.description)
-                    .map((route) => (
-                        <li key={route.path}>
-                            <NavLink to={route.path}>
-                                <span class="font-bold">{route.name}</span>
-                            </NavLink>
-                            : {route.description}
-                        </li>
-                ))}
-            </ul>
+            <div className="flex justify-between items-center">
+                <ul className="list-disc pl-5 flex-1">
+                    {routes
+                        .filter((route) => route.description)
+                        .map((route) => (
+                            <li key={route.path}>
+                                <NavLink to={route.path}>
+                                    <span class="font-bold">{route.name}</span>
+                                </NavLink>
+                                : {route.description}
+                            </li>
+                    ))}
+                </ul>
+                <div className="bg-purple-600 border-4 border-purple-300 border-dashed rounded-md p-4 text-purple-900 text-center w-64">
+                    Try <span className="font-bold">h</span>, <span className="font-bold">j</span>, <span className="font-bold">k</span>, and <span className="font-bold">l</span> keys to navigate around the site!
+                </div>
+            </div>
         </div>
     );
 }
