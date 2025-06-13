@@ -18,6 +18,10 @@ function NavBar() {
                 // Navigate to the previous route
                 const prevIndex = (currentIndex - 1 + routes.length) % routes.length;
                 navigate(routes[prevIndex].path);
+            } else if (event.key === "j") {
+                window.scrollBy({ top: 50, behavior: "smooth" });
+            } else if (event.key === "k") {
+                window.scrollBy({ top: -50, behavior: "smooth" });
             }
         };
 
