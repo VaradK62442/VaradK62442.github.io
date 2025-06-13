@@ -16,7 +16,7 @@ function Layout({ children }) {
                 </div>
             </header>
             <NavBar />
-            <main class="flex-grow container mx-auto px-4 py-6 max-w-5xl">
+            <main class="flex-grow container mx-auto px-4 py-6 max-w-5xl flex flex-col justify-between">
                 {children}
                 <div class="mt-6 grid grid-cols-3 gap-4">
                     <Social
