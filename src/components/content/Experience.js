@@ -1,44 +1,47 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 function Experience() {
-    const experiences = [
-        {
-            id: "ugr-driverless",
-            title: "Head Software Engineer - UGRacing Driverless",
-            shortDescription: "Leading the technical development of driverless software for UGRacing.",
-            description: "..."
-        },
-        {
-            id: "stable-matching-research",
-            title: "Researcher - Stable Matching Problems",
-            shortDescription: "Conducting research on various Stable Matching problems.",
-            description: "..."
-        },
-        {
-            id: "simple-game",
-            title: "Simple Game - DYHTG24 Hackathon JPM Winner",
-            shortDescription: "Developed a minimalist bullet hell style game using Godot Engine.",
-            description: "...",
-        },
-        {
-            id: "essays",
-            title: "Essays on Various Maths and Computing Topics",
-            shortDescription: "Researching and writing essays on various topics of interest in mathematics and computing.",
-            description: "...",
-        },
-        {
-            id: "word-equations",
-            title: "Studying Word Equations in Free Monoids",
-            shortDescription: "Studying word equations in free monoids and existence and uniqueness of their solutions.",
-            description: "..."
-        },
-        {
-            id: "finite-state-automata",
-            title: "Studying Automata - The Theory of Computation by Michael Sipser",
-            shortDescription: "Studying finite state automata and the theory of computation.",
-            description: "..."
-        },
-    ]
+    const experiences = useMemo(
+        () => [
+            {
+                id: "ugr-driverless",
+                title: "Head Software Engineer - UGRacing Driverless",
+                shortDescription: "Leading the technical development of driverless software for UGRacing.",
+                description: "..."
+            },
+            {
+                id: "stable-matching-research",
+                title: "Researcher - Stable Matching Problems",
+                shortDescription: "Conducting research on various Stable Matching problems.",
+                description: "..."
+            },
+            {
+                id: "simple-game",
+                title: "Simple Game - DYHTG24 Hackathon JPM Winner",
+                shortDescription: "Developed a minimalist bullet hell style game using Godot Engine.",
+                description: "...",
+            },
+            {
+                id: "essays",
+                title: "Essays on Various Maths and Computing Topics",
+                shortDescription: "Researching and writing essays on various topics of interest in mathematics and computing.",
+                description: "...",
+            },
+            {
+                id: "word-equations",
+                title: "Studying Word Equations in Free Monoids",
+                shortDescription: "Studying word equations in free monoids and existence and uniqueness of their solutions.",
+                description: "..."
+            },
+            {
+                id: "finite-state-automata",
+                title: "Studying Automata - The Theory of Computation by Michael Sipser",
+                shortDescription: "Studying finite state automata and the theory of computation.",
+                description: "..."
+            },
+        ],
+        []
+    );
 
     const [activeIndex, setActiveIndex] = useState(null);
 
