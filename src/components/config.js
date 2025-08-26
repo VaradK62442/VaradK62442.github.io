@@ -99,4 +99,92 @@ const maths_courses = {
     ],
 }
 
-export { routes, experiences, cs_courses, maths_courses };
+const projects = [
+    {
+        title: "algmatch",
+        shortDescription: "PyPi package for several matching algorithms",
+        fullDescription: "",
+    },
+    {
+        title: "Coaster",
+        shortDescription: "A simple Rust-based text editor",
+        fullDescription: "",
+    },
+    {
+        title: "lean",
+        shortDescription: "LEAN programming language practice",
+        fullDescription: "",
+    },
+    {
+        title: "Quizzer",
+        shortDescription: "Command line flashcard-like quiz application",
+        fullDescription: "",
+    },
+    {
+        title: "makanin",
+        shortDescription: "Several programs for word equations",
+        fullDescription: "",
+    },
+    {
+        title: "Portfolio Website",
+        shortDescription: "This website!",
+        fullDescription: "",
+    },
+    {
+        title: "Image Processing",
+        shortDescription: "Scripts for processing images in different ways",
+        fullDescription: "",
+    },
+    {
+        title: "CatanSim",
+        shortDescription: "A simulator for the board game Catan",
+        fullDescription: "",
+    },
+    {
+        title: "CaptainPinkie",
+        shortDescription: "A Java game created as part of the second year IOOP course",
+        fullDescription: "",
+    },
+    {
+        title: "examAnalysis",
+        shortDescription: "Scripts to analyse dates and times of exam timetables",
+        fullDescription: "",
+    },
+    {
+        title: "Notion Automation",
+        shortDescription: "JS scripts to automate tasks in Notion",
+        fullDescription: "",
+    },
+    {
+        title: "emailBrief",
+        shortDescription: "A program to send me a daily email brief",
+        fullDescription: "",
+    },
+    {
+        title: "Maths Approximations",
+        shortDescription: "Various methods of approximating pi and other values",
+        fullDescription: "",
+    },
+    {
+        title: "S1YZPrograms",
+        shortDescription: "Python programs for calculating processes for various statistical tests",
+        fullDescription: "",
+    },
+    {
+        title: "collatz",
+        shortDescription: "A program to explore the Collatz conjecture",
+        fullDescription: "",
+    },
+    {
+        title: "bfCompiler",
+        shortDescription: "A Brainf**k compiler written in Python",
+        fullDescription: "",
+    },
+    {
+        title: "ZariiBot",
+        shortDescription: "A simple discord bot",
+        fullDescription: "",
+    },
+];
+
+export { routes, experiences, cs_courses, maths_courses, projects };
