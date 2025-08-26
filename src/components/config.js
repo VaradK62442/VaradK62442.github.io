@@ -41,12 +41,7 @@ const experiences = [
         id: "word-equations",
         title: "Studying Word Equations in Free Monoids",
         shortDescription: "Studying word equations in free monoids and existence and uniqueness of their solutions.",
-    },
-    {
-        id: "finite-state-automata",
-        title: "Studying Automata - The Theory of Computation by Michael Sipser",
-        shortDescription: "Studying finite state automata and the theory of computation.",
-    },
+    }
 ]
 
 export { routes, experiences };
