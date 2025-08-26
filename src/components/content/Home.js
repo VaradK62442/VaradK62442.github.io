@@ -5,14 +5,16 @@ import { routes } from "../config";
 function Home() {
     return (
         <div>
-            <ParagraphSection
-                paragraph = {
-                    "Hi, I'm Varad Kulkarni, currently an undergraduate student at the University of Glasgow, studying Computer Science and Mathematics.\n" +
-                    "This website is a personal portfolio to show off things I've done, things I'm working on, and generally things that I'm passionate about!\n"
-                }
-                image = "pfp.JPG"
-                position = "left"
-            />
+            <NavLink to="/about">
+                <ParagraphSection
+                    paragraph = {
+                        "Hi, I'm Varad Kulkarni, currently an undergraduate student at the University of Glasgow, studying Computer Science and Mathematics.\n" +
+                        "This website is a personal portfolio to show off things I've done, things I'm working on, and generally things that I'm passionate about!\n"
+                    }
+                    image = "pfp.JPG"
+                    position = "left"
+                />
+            </NavLink>
             <br />
             <div className="flex justify-between items-center">
                 <ul className="list-disc pl-5 flex-1">
