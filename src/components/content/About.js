@@ -25,9 +25,9 @@ function About() {
             <NavLink to="/experience#ugr-driverless">
                 <ParagraphSection
                     paragraph = {
-                        "I am the Head Software Engineer for the University of Glasgow Racing's Driverless sub-team.\n" +
-                        "This involves managing and leading the technical side of the development of driverless software,\n" +
-                        "which we compete with at the Formula Student UK competition.\n" +
+                        "I was the Head Software Engineer for the University of Glasgow Racing's Driverless sub-team.\n" +
+                        "This involved managing and leading the technical side of the development of driverless software,\n" +
+                        "which we compete with at the Formula Student UK competition, and achieved 3rd place overall at FSUK 2025.\n" +
                         "Working on and contributing to this project is what sparked my interest in robotics,\n" +
                         "since we use the Robotics Operating System (ROS2) as our main framework.\n"
                     }
