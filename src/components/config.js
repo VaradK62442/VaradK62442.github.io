@@ -13,6 +13,11 @@ const experiences = [
         shortDescription: "Leading the technical development of driverless software for UGRacing.",
     },
     {
+        id: "sas-internship",
+        title: "Associate Software Engineer - SAS",
+        shortDescription: "Worked as a full-stack developer on developing a live dashboard component at SAS.",
+    },
+    {
         id: "stable-matching-research",
         title: "Researcher - Stable Matching Problems",
         shortDescription: "Conducting research on various Stable Matching problems.",

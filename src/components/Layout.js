@@ -40,8 +40,8 @@ function Layout({ children }) {
                     <Social
                         icon="https://images.icon-icons.com/2389/PNG/512/medium_logo_icon_145071.png"
                         link="https://medium.com/@varadkulk123"
-                        title="Medium Blog"
-                        description="Check out my Medium blog for essays on various topics."
+                        title="Medium"
+                        description="Check out my blog for essays on various topics."
                     />
                 </div>
             </main>
