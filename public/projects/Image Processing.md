@@ -7,6 +7,6 @@ To provide a break from revising by taking notes, as well as to strengthen my kn
 <br>
 
 <div style="display: flex; justify-content: center;">
-    <img src="/media/imageProcessing1.png" width="45%">
-    <img src="/media/imageProcessing2.png" width="45%">
+    <img src="/media/imageProcessing1.png" width="50%">
+    <img src="/media/imageProcessing2.png" width="50%">
 </div>
