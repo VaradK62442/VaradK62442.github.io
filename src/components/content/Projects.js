@@ -1,17 +1,30 @@
 import { useState, useRef, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import ProjectTile from "./ProjectTile";
 import { projects } from "../config";
 
 function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
+    const [markdownContent, setMarkdownContent] = useState("");
     const overlayRef = useRef(null);
 
-    const handleTileClick = (project) => {
+    const handleTileClick = async (project) => {
         setSelectedProject(project);
+
+        try {
+            const response = await fetch("/projects/" + project.title + ".md");
+            const text = await response.text();
+            setMarkdownContent(text);
+        } catch (error) {
+            console.error("Error fetching Markdown file:", error);
+            setMarkdownContent("Failed to load project description.");
+        }
     };
 
     const closeOverlay = () => {
         setSelectedProject(null);
+        setMarkdownContent("");
     };
 
     useEffect(() => {
@@ -49,7 +62,9 @@ function Projects() {
                         className="bg-purple-800 p-6 rounded-lg shadow-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto relative"
                     >
                         <div className="flex justify-between items-start mb-4">
-                            <h2 className="text-2xl font-bold bg-purple-700 rounded px-2 py-1">{selectedProject.title}</h2>
+                            <h2 className="text-2xl font-bold bg-purple-700 rounded px-2 py-1">
+                                {selectedProject.title}
+                            </h2>
                             <ul className="flex flex-wrap gap-2">
                                 {selectedProject.tools?.map((tool, index) => (
                                     <li
@@ -61,7 +76,9 @@ function Projects() {
                                 ))}
                             </ul>
                         </div>
-                        <p className="mb-16 text-purple-600">{selectedProject.fullDescription}</p>
+                        <div className="mb-6 text-purple-600">
+                            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{markdownContent}</ReactMarkdown>
+                        </div>
                         <div className="sticky bottom-0 left-0 w-full bg-purple-700 p-4 flex items-center justify-between rounded-lg">
                             {selectedProject.github && (
                                 <a

@@ -102,8 +102,8 @@ const maths_courses = {
 const projects = [
     {
         title: "algmatch",
-        shortDescription: "PyPi package for several matching algorithms",
-        fullDescription: "",
+        shortDescription: "PyPI package for several matching algorithms",
+        fullDescription: "As part of my research on Stable Matching and Matching problems generally, I worked on implementing several matching algorithms and related utilities to release as a Python package. Our aim was to make using these algorithms as easy as possible since existing libraries provided a difficult interface to work with. The package includes implementations of several matching algorithms, including ones using Integer Linear Programming using the Gurobi solver.",
         tools: ["Python", "Gurobi"],
         github: "https://github.com/VaradK62442/algmatch"
     },
