@@ -104,109 +104,127 @@ const projects = [
         title: "algmatch",
         shortDescription: "PyPi package for several matching algorithms",
         fullDescription: "",
-        tools: ["Python", "Gurobi"]
+        tools: ["Python", "Gurobi"],
+        github: "https://github.com/VaradK62442/algmatch"
     },
     {
         title: "Simple Game",
         shortDescription: "A minimalist bullet hell style game",
         fullDescription: "",
-        tools: ["Godot", "GDScript"]
+        tools: ["Godot", "GDScript"],
+        github: "https://github.com/VaradK62442/simplegame"
     },
     {
         title: "Coaster",
         shortDescription: "A simple Rust-based text editor",
         fullDescription: "",
-        tools: ["Rust"]
+        tools: ["Rust"],
+        github: "https://github.com/VaradK62442/simplegame"
     },
     {
         title: "lean",
         shortDescription: "LEAN programming language practice",
         fullDescription: "",
-        tools: ["LEAN"]
+        tools: ["LEAN"],
+        github: "https://github.com/VaradK62442/lean"
     },
     {
         title: "Quizzer",
         shortDescription: "Command line flashcard-like quiz application",
         fullDescription: "",
-        tools: ["Python"]
+        tools: ["Python"],
+        github: "https://github.com/VaradK62442/quizzer"
     },
     {
         title: "makanin",
         shortDescription: "Several programs for word equations",
         fullDescription: "",
-        tools: ["Python"]
+        tools: ["Python"],
+        github: "https://github.com/VaradK62442/makanin"
     },
     {
         title: "Portfolio Website",
         shortDescription: "This website!",
         fullDescription: "",
-        tools: ["React", "JavaScript", "TailwindCSS"]
+        tools: ["React", "JavaScript", "TailwindCSS"],
+        github: "https://github.com/VaradK62442/VaradK62442.github.io"
     },
     {
         title: "Image Processing",
         shortDescription: "Scripts for processing images in different ways",
         fullDescription: "",
-        tools: ["Python", "OpenCV"]
+        tools: ["Python", "OpenCV"],
+        github: "https://github.com/VaradK62442/imageProcessing"
     },
     {
         title: "CatanSim",
         shortDescription: "A simulator for the board game Catan",
         fullDescription: "",
-        tools: ["Python", "tkinter"]
-    },
-    {
-        title: "CaptainPinkie",
-        shortDescription: "A Java game created as part of the second year IOOP course",
-        fullDescription: "",
-        tools: ["Java"]
-    },
-    {
-        title: "examAnalysis",
-        shortDescription: "Scripts to analyse dates and times of exam timetables",
-        fullDescription: "",
-        tools: ["Python", "Bash"]
-    },
-    {
-        title: "Notion Automation",
-        shortDescription: "JS scripts to automate tasks in Notion",
-        fullDescription: "",
-        tools: ["JavaScript", "Notion API"]
-    },
-    {
-        title: "emailBrief",
-        shortDescription: "A program to send me a daily email brief",
-        fullDescription: "",
-        tools: ["Python", "SMTP"]
+        tools: ["Python", "tkinter"],
+        github: "https://github.com/VaradK62442/catanSim"
     },
     {
         title: "Maths Approximations",
         shortDescription: "Various methods of approximating pi and other values",
         fullDescription: "",
-        tools: ["Python"]
+        tools: ["Python"],
+        github: "https://github.com/VaradK62442/mathsApproximations"
     },
     {
-        title: "S1YZPrograms",
+        title: "Exam Analysis",
+        shortDescription: "Scripts to analyse dates and times of exam timetables",
+        fullDescription: "",
+        tools: ["Python", "Bash"],
+        github: "https://github.com/VaradK62442/examAnalysis"
+    },
+    {
+        title: "Notion Automation",
+        shortDescription: "JS scripts to automate tasks in Notion",
+        fullDescription: "",
+        tools: ["JavaScript", "Notion API"],
+        github: "https://github.com/VaradK62442/notionAutomation"
+    },
+    {
+        title: "Daily Email Brief",
+        shortDescription: "A program to send me a daily email brief",
+        fullDescription: "",
+        tools: ["Python", "SMTP"],
+        github: "https://github.com/VaradK62442/emailBrief"
+    },
+    {
+        title: "CaptainPinkie",
+        shortDescription: "A Java game created as part of the second year IOOP course",
+        fullDescription: "",
+        tools: ["Java"],
+        github: "https://github.com/VaradK62442/CaptainPinkie"
+    },
+    {
+        title: "Statistics Programs",
         shortDescription: "Python programs for calculating processes for various statistical tests",
         fullDescription: "",
-        tools: ["Python", "tkinter"]
+        tools: ["Python", "tkinter"],
+        github: "https://github.com/VaradK62442/S1YZPrograms"
     },
     {
         title: "collatz",
         shortDescription: "A program to explore the Collatz conjecture",
         fullDescription: "",
-        tools: ["Python"]
+        tools: ["Python"],
+        github: "https://github.com/VaradK62442/collatz"
     },
     {
         title: "bfCompiler",
         shortDescription: "A Brainf**k compiler written in Python",
         fullDescription: "",
-        tools: ["Python"]
+        tools: ["Python"],
+        github: "https://github.com/VaradK62442/bfCompiler"
     },
     {
         title: "ZariiBot",
         shortDescription: "A simple discord bot",
         fullDescription: "",
-        tools: ["Python", "Discord.py"]
+        tools: ["Python", "Discord.py"],
+        github: "https://github.com/VaradK62442/ZariiBot"
     },
 ];
 
