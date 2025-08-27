@@ -104,86 +104,109 @@ const projects = [
         title: "algmatch",
         shortDescription: "PyPi package for several matching algorithms",
         fullDescription: "",
+        tools: ["Python", "Gurobi"]
+    },
+    {
+        title: "Simple Game",
+        shortDescription: "A minimalist bullet hell style game",
+        fullDescription: "",
+        tools: ["Godot", "GDScript"]
     },
     {
         title: "Coaster",
         shortDescription: "A simple Rust-based text editor",
         fullDescription: "",
+        tools: ["Rust"]
     },
     {
         title: "lean",
         shortDescription: "LEAN programming language practice",
         fullDescription: "",
+        tools: ["LEAN"]
     },
     {
         title: "Quizzer",
         shortDescription: "Command line flashcard-like quiz application",
         fullDescription: "",
+        tools: ["Python"]
     },
     {
         title: "makanin",
         shortDescription: "Several programs for word equations",
         fullDescription: "",
+        tools: ["Python"]
     },
     {
         title: "Portfolio Website",
         shortDescription: "This website!",
         fullDescription: "",
+        tools: ["React", "JavaScript", "TailwindCSS"]
     },
     {
         title: "Image Processing",
         shortDescription: "Scripts for processing images in different ways",
         fullDescription: "",
+        tools: ["Python", "OpenCV"]
     },
     {
         title: "CatanSim",
         shortDescription: "A simulator for the board game Catan",
         fullDescription: "",
+        tools: ["Python", "tkinter"]
     },
     {
         title: "CaptainPinkie",
         shortDescription: "A Java game created as part of the second year IOOP course",
         fullDescription: "",
+        tools: ["Java"]
     },
     {
         title: "examAnalysis",
         shortDescription: "Scripts to analyse dates and times of exam timetables",
         fullDescription: "",
+        tools: ["Python", "Bash"]
     },
     {
         title: "Notion Automation",
         shortDescription: "JS scripts to automate tasks in Notion",
         fullDescription: "",
+        tools: ["JavaScript", "Notion API"]
     },
     {
         title: "emailBrief",
         shortDescription: "A program to send me a daily email brief",
         fullDescription: "",
+        tools: ["Python", "SMTP"]
     },
     {
         title: "Maths Approximations",
         shortDescription: "Various methods of approximating pi and other values",
         fullDescription: "",
+        tools: ["Python"]
     },
     {
         title: "S1YZPrograms",
         shortDescription: "Python programs for calculating processes for various statistical tests",
         fullDescription: "",
+        tools: ["Python", "tkinter"]
     },
     {
         title: "collatz",
         shortDescription: "A program to explore the Collatz conjecture",
         fullDescription: "",
+        tools: ["Python"]
     },
     {
         title: "bfCompiler",
         shortDescription: "A Brainf**k compiler written in Python",
         fullDescription: "",
+        tools: ["Python"]
     },
     {
         title: "ZariiBot",
         shortDescription: "A simple discord bot",
         fullDescription: "",
+        tools: ["Python", "Discord.py"]
     },
 ];
 

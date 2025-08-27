@@ -36,7 +36,7 @@ function Projects() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {projects.map((project) => (
                     <ProjectTile
-                        project={project}
+                                                project={project}
                         onClick={handleTileClick}
                     />
                 ))}
@@ -48,7 +48,19 @@ function Projects() {
                         ref={overlayRef}
                         className="bg-purple-700 p-6 rounded-lg shadow-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto relative"
                     >
-                        <h2 className="text-xl font-bold mb-4">{selectedProject.title}</h2>
+                        <div className="flex justify-between items-start mb-4">
+                            <h2 className="text-xl font-bold">{selectedProject.title}</h2>
+                            <ul className="flex flex-wrap gap-2">
+                                {selectedProject.tools?.map((tool, index) => (
+                                    <li
+                                        key={index}
+                                        className="px-2 py-1 bg-purple-800 text-white text-sm rounded"
+                                    >
+                                        <b>{tool}</b>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                         <p className="mb-16">{selectedProject.fullDescription}</p>
                         <div className="sticky bottom-0 left-0 w-full bg-purple-800 p-4 flex justify-end rounded-lg">
                             <button
