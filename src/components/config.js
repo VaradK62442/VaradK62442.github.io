@@ -171,6 +171,13 @@ const projects = [
         github: "https://github.com/VaradK62442/mathsApproximations"
     },
     {
+        title: "CaptainPinkie",
+        shortDescription: "A Java game created as part of the second year IOOP course",
+        fullDescription: "",
+        tools: ["Java"],
+        github: "https://github.com/VaradK62442/CaptainPinkie"
+    },
+    {
         title: "Exam Analysis",
         shortDescription: "Scripts to analyse dates and times of exam timetables",
         fullDescription: "",
@@ -190,13 +197,6 @@ const projects = [
         fullDescription: "",
         tools: ["Python", "SMTP"],
         github: "https://github.com/VaradK62442/emailBrief"
-    },
-    {
-        title: "CaptainPinkie",
-        shortDescription: "A Java game created as part of the second year IOOP course",
-        fullDescription: "",
-        tools: ["Java"],
-        github: "https://github.com/VaradK62442/CaptainPinkie"
     },
     {
         title: "Statistics Programs",
