@@ -23,11 +23,6 @@ const experiences = [
         shortDescription: "Conducting research on various Stable Matching problems.",
     },
     {
-        id: "simple-game",
-        title: "Simple Game - DYHTG24 Hackathon JPM Winner",
-        shortDescription: "Developed a minimalist bullet hell style game using Godot Engine.",
-    },
-    {
         id: "individual-project",
         title: "Individual 4th year Project - Formal verification in LEAN",
         shortDescription: "Using the LEAN theorem prover to verify properties about finite automata.",
@@ -36,6 +31,11 @@ const experiences = [
         id: "team-project",
         title: "Team Project - SUERC AMS Database",
         shortDescription: "Developed a web application to manage the SUERC AMS database using Django.",
+    },
+    {
+        id: "simple-game",
+        title: "Simple Game - DYHTG24 Hackathon JPM Winner",
+        shortDescription: "Developed a minimalist bullet hell style game using Godot Engine.",
     },
     {
         id: "essays",
