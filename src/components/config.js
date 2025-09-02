@@ -10,17 +10,22 @@ const experiences = [
     {
         id: "ugr-driverless",
         title: "Head Software Engineer - UGRacing Driverless",
-        shortDescription: "Leading the technical development of driverless software for UGRacing.",
+        shortDescription: "Lead the technical development of an autonomous driverless system for UGRacing.",
     },
     {
         id: "sas-internship",
         title: "Associate Software Engineer - SAS",
-        shortDescription: "Worked as a full-stack developer on developing a live dashboard component at SAS.",
+        shortDescription: "Full-stack developer on developing a live dashboard component at SAS.",
     },
     {
         id: "stable-matching-research",
         title: "Researcher - Stable Matching Problems",
         shortDescription: "Conducting research on various Stable Matching problems.",
+    },
+    {
+        id: "simple-game",
+        title: "Simple Game - DYHTG24 Hackathon JPM Winner",
+        shortDescription: "Developed a minimalist bullet hell style game using Godot Engine.",
     },
     {
         id: "individual-project",
@@ -31,11 +36,6 @@ const experiences = [
         id: "team-project",
         title: "Team Project - SUERC AMS Database",
         shortDescription: "Developed a web application to manage the SUERC AMS database using Django.",
-    },
-    {
-        id: "simple-game",
-        title: "Simple Game - DYHTG24 Hackathon JPM Winner",
-        shortDescription: "Developed a minimalist bullet hell style game using Godot Engine.",
     },
     {
         id: "essays",
