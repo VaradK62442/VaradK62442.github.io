@@ -1,0 +1,1 @@
+bf (Brainf**k) is an esoteric programming language consisting of only 8 simple instructions, and running on an array of cells. When I first learned about it, and about esoteric programming languages in general, I thought it would be a fun challenge to program a compiler for the language due to its simple set of instructions.

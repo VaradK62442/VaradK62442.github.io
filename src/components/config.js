@@ -185,20 +185,6 @@ const projects = [
         github: "https://github.com/VaradK62442/examAnalysis"
     },
     {
-        title: "Notion Automation",
-        shortDescription: "JS scripts to automate tasks in Notion",
-        fullDescription: "",
-        tools: ["JavaScript", "Notion API"],
-        github: "https://github.com/VaradK62442/notionAutomation"
-    },
-    {
-        title: "Daily Email Brief",
-        shortDescription: "A program to send me a daily email brief",
-        fullDescription: "",
-        tools: ["Python", "SMTP"],
-        github: "https://github.com/VaradK62442/emailBrief"
-    },
-    {
         title: "Statistics Programs",
         shortDescription: "Python programs for calculating processes for various statistical tests",
         fullDescription: "",
@@ -213,19 +199,26 @@ const projects = [
         github: "https://github.com/VaradK62442/collatz"
     },
     {
+        title: "Notion Automation",
+        shortDescription: "JS scripts to automate tasks in Notion",
+        fullDescription: "",
+        tools: ["JavaScript", "Notion API"],
+        github: "https://github.com/VaradK62442/notionAutomation"
+    },
+    {
+        title: "Daily Email Brief",
+        shortDescription: "A program to send me a daily email brief",
+        fullDescription: "",
+        tools: ["Python", "SMTP"],
+        github: "https://github.com/VaradK62442/emailBrief"
+    },
+    {
         title: "bfCompiler",
         shortDescription: "A Brainf**k compiler written in Python",
         fullDescription: "",
         tools: ["Python"],
         github: "https://github.com/VaradK62442/bfCompiler"
-    },
-    {
-        title: "ZariiBot",
-        shortDescription: "A simple discord bot",
-        fullDescription: "",
-        tools: ["Python", "Discord.py"],
-        github: "https://github.com/VaradK62442/ZariiBot"
-    },
+    }
 ];
 
 export { routes, experiences, cs_courses, maths_courses, projects };
