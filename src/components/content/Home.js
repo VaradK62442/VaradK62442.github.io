@@ -40,7 +40,7 @@ function Home() {
                             href={tool.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex flex-col items-center bg-purple-600 p-2 rounded-md shadow-md hover:shadow-lg transition"
+                            className="flex flex-col items-center bg-crimson p-2 rounded-md shadow-md hover:shadow-lg transition"
                         >
                             <span className="text-sm font-medium">{tool.name}</span>
                         </a>

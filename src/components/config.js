@@ -1,9 +1,9 @@
 const routes = [
     { path: "/", name: "Home" },
-    { path: "/about", name: "About", description: "A little bit about me and my interests." },
-    { path: "/experience", name: "Experience", description: "A summary of my experience." },
-    { path: "/education", name: "Education", description: "An overview of my education." },
-    { path: "/projects", name: "Projects", description: "A thorough showcase of my personal projects." },
+    { path: "/about", name: "About", description: "An overall summary about me, my interests, and my experiences." },
+    { path: "/experience", name: "Experience", description: "A summary of my professional and personal experiences." },
+    { path: "/education", name: "Education", description: "An overview of my University education." },
+    { path: "/projects", name: "Projects", description: "A showcase of my personal projects." },
 ]
 
 const experiences = [
@@ -228,9 +228,11 @@ const tools = [
     {name: "Ubuntu", link: "https://ubuntu.com/"},
     {name: "JavaScript", link: "https://en.wikipedia.org/wiki/JavaScript"},
     {name: "Java", link: "https://www.java.com/en/"},
+    {name: "numpy", link: "https://numpy.org/"},
     {name: "OpenCV", link: "https://opencv.org/"},
     {name: "LEAN", link: "https://lean-lang.org/"},
     {name: "Gurobi", link: "https://www.gurobi.com/"},
+    {name: "vim", link:"https://www.vim.org/"},
     {name: "React", link: "https://react.dev/"},
     {name: "Playwright", link: "https://playwright.dev/python"},
     {name: "Godot", link: "https://godotengine.org/"},
