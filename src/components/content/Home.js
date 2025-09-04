@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import ParagraphSection from "./ParagraphSection";
-import { routes } from "../config";
+import { routes, tools } from "../config";
 
 function Home() {
     return (
@@ -23,14 +23,30 @@ function Home() {
                         .map((route) => (
                             <li key={route.path}>
                                 <NavLink to={route.path}>
-                                    <span class="font-bold">{route.name}</span>
+                                    <span className="font-bold">{route.name}</span>
                                 </NavLink>
                                 : {route.description}
                             </li>
                     ))}
                 </ul>
                 <div className="bg-purple-600 border-4 border-purple-300 border-dashed rounded-md p-4 text-purple-900 text-center w-64">
-                    Try try <span className="font-bold">h</span>, <span className="font-bold">j</span>, <span className="font-bold">k</span>, and <span className="font-bold">l</span> keys to navigate around the site!
+                    Try using arrow keys or <span className="font-bold">h</span>, <span className="font-bold">j</span>, <span className="font-bold">k</span>, and <span className="font-bold">l</span> keys to navigate around the site!
+                </div>
+            </div>
+            <br />
+            <div className="mt-8">
+                <h2 className="text-xl font-bold mb-2 text-center">Tools, Languages, and Frameworks</h2>
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
+                    {tools.map((tool) => (
+                        <a
+                            href={tool.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex flex-col items-center bg-purple-600 p-2 rounded-md shadow-md hover:shadow-lg transition"
+                        >
+                            <span className="text-sm font-medium">{tool.name}</span>
+                        </a>
+                    ))}
                 </div>
             </div>
         </div>

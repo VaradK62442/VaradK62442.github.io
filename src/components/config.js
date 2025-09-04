@@ -146,7 +146,7 @@ const projects = [
         title: "Portfolio Website",
         shortDescription: "This website!",
         fullDescription: "",
-        tools: ["React", "JavaScript", "TailwindCSS"],
+        tools: ["React", "JavaScript"],
         github: "https://github.com/VaradK62442/VaradK62442.github.io"
     },
     {
@@ -221,4 +221,25 @@ const projects = [
     }
 ];
 
-export { routes, experiences, cs_courses, maths_courses, projects };
+const tools = [
+    {name: "Python", link: "https://www.python.org/"},
+    {name: "Git", link: "https://git-scm.com/"},
+    {name: "ROS2", link: "https://www.ros.org/"},
+    {name: "Ubuntu", link: "https://ubuntu.com/"},
+    {name: "JavaScript", link: "https://en.wikipedia.org/wiki/JavaScript"},
+    {name: "Java", link: "https://www.java.com/en/"},
+    {name: "OpenCV", link: "https://opencv.org/"},
+    {name: "LEAN", link: "https://lean-lang.org/"},
+    {name: "Gurobi", link: "https://www.gurobi.com/"},
+    {name: "React", link: "https://react.dev/"},
+    {name: "Playwright", link: "https://playwright.dev/python/docs/intro"},
+    {name: "Godot", link: "https://godotengine.org/"},
+    {name: "ANTLR", link: "https://www.antlr.org/"},
+    {name: "Ultralytics", link: "https://docs.ultralytics.com/"},
+    {name: "ZED SDK", link: "https://www.stereolabs.com/en-gb/developers/release"},
+    {name: "RViz", link: "https://github.com/ros-visualization/rviz"},
+    {name: "Foxglove", link: "https://docs.foxglove.dev/docs"},
+    {name: "Django", link: "https://www.djangoproject.com/"},
+];
+
+export { routes, experiences, cs_courses, maths_courses, projects, tools };
