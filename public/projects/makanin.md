@@ -1,4 +1,4 @@
-During Summer 2024, I worked on researching into the field of word equations, specifically the existence and uniqueness of solutions of word equations in 2 letters. These equations simply consists of an unknown variable "x", and two letters, usually "a" and "b". Equations are of the form "xaab = baax", and the question lies in the existence and uniqueness of solutions. You can see in that example, we have the solution "x = b", as well as "x = baab".
+During Summer 2024, I worked on researching into the field of word equations with a colleague under supervision of Prof. Laura Ciobanu, specifically on the existence and uniqueness of solutions of word equations in 2 letters. These equations simply consists of an unknown variable "x", and two letters, usually "a" and "b". Equations are of the form "xaab = baax", and the question lies in the existence and uniqueness of solutions. You can see in that example, we have the solution "x = b", as well as "x = baab".
 
 <br>
 
