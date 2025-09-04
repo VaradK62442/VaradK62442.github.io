@@ -1,4 +1,4 @@
-In second year, during the Introduction to Object Oriented Programming (IOOP) course, we were taught Java through incrementally developing a game throughout the semester, by adding various features as we learned the language. The last assignment had a section in which we could implement any extra features we wanted, so I decided to make this a fully fleshed out game, and publish it on <u><a href="https://hades62442.itch.io/captain-pinkies-adventure">itch.io</a></u>.
+In second year, during the Introduction to Object Oriented Programming (IOOP) course, we were taught Java through incrementally developing a game throughout the semester, by adding various features as we learned the language. The last assignment had a section in which we could implement any extra features we wanted, so I decided to make this a fully fleshed out game, and publish it on <u><a href="https://hades62442.itch.io/captain-pinkies-adventure" target="_blank" rel="noopener noreferrer">itch.io</a></u>.
 
 <br>
 

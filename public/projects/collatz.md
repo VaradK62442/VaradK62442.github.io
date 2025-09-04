@@ -6,7 +6,7 @@ Take any positive number. If it is even, divide it by 2. If it is odd, multiply 
 
 <br>
 
-To explore and exposit about this conjecture, I made a program to generate plots of Collatz numbers and sequences, to aid in writing <u><a href="https://medium.com/@varadkulk123/the-collatz-conjecture-68130a357486">this essay</a></u>.
+To explore and exposit about this conjecture, I made a program to generate plots of Collatz numbers and sequences, to aid in writing <u><a href="https://medium.com/@varadkulk123/the-collatz-conjecture-68130a357486" target="_blank" rel="noopener noreferrer">this essay</a></u>.
 
 <br>
 

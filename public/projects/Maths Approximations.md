@@ -1,4 +1,4 @@
-Another essay idea I had was to compare several different methods of approximating pi, which I wrote about in <u><a href="https://medium.com/@varadkulk123/methods-of-approximating-pi-d61fcb042ad1">this essay</a></u>.
+Another essay idea I had was to compare several different methods of approximating pi, which I wrote about in <u><a href="https://medium.com/@varadkulk123/methods-of-approximating-pi-d61fcb042ad1" target="_blank" rel="noopener noreferrer">this essay</a></u>.
 
 <br>
 

@@ -2,7 +2,7 @@ One of the projeccts I have wanted to create for a long time has been a text edi
 
 <br>
 
-I had wanted to learn Rust for a while, and this seemed like the perfect project to accomplish that. I found a great <u><a href="https://philippflenker.com/hecto-chapter-1/">tutorial</a></u> on building a text editor, and have followed and adapted it to my preferences, which are heavily inspired and influenced by Vim.
+I had wanted to learn Rust for a while, and this seemed like the perfect project to accomplish that. I found a great <u><a href="https://philippflenker.com/hecto-chapter-1/" target="_blank" rel="noopener noreferrer">tutorial</a></u> on building a text editor, and have followed and adapted it to my preferences, which are heavily inspired and influenced by Vim.
 
 <br>
 

@@ -1,4 +1,4 @@
-I use <u><a href="https://www.notion.com/">Notion</a></u> pretty significantly to manage my calendar, to-do lists, and university work so to ease my workflow I implemented a few automations using the Notion API.
+I use <u><a href="https://www.notion.com/" target="_blank" rel="noopener noreferrer">Notion</a></u> pretty significantly to manage my calendar, to-do lists, and university work so to ease my workflow I implemented a few automations using the Notion API.
 
 <br>
 

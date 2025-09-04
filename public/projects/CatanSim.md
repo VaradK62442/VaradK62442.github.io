@@ -1,8 +1,8 @@
-I really enjoyed the game of Catan when I first played it and immediately thought there must be some interesting analysis to be performed given the game's design. I had an idea to analyse resource distribution for Catan, and wrote about it in this <u><a href="https://medium.com/@varadkulk123/an-analysis-of-resource-dsitribution-in-catan-d8d91b518e71">essay</a></u>.
+I really enjoyed the game of Catan when I first played it and immediately thought there must be some interesting analysis to be performed given the game's design. I had an idea to analyse resource distribution for Catan, and wrote about it in this <u><a href="https://medium.com/@varadkulk123/an-analysis-of-resource-dsitribution-in-catan-d8d91b518e71 target="_blank" rel="noopener noreferrer"">essay</a></u>.
 
 <br>
 
-To aid in this essay, I developed a simulation of the board game using Python. The simulation involves randomly setting up the board, assigning the tokens according to the rulebook, and displaying the board. I used <u><a href="https://docs.python.org/3/library/tkinter.html">tkinter</a></u> for drawing the board since that was being taught in my courses at the time, and it was a fun experience to derive the equations for drawing a hexagon, and then translate them into code.
+To aid in this essay, I developed a simulation of the board game using Python. The simulation involves randomly setting up the board, assigning the tokens according to the rulebook, and displaying the board. I used <u><a href="https://docs.python.org/3/library/tkinter.html" target="_blank" rel="noopener noreferrer">tkinter</a></u> for drawing the board since that was being taught in my courses at the time, and it was a fun experience to derive the equations for drawing a hexagon, and then translate them into code.
 
 <br>
 
