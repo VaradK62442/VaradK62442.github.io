@@ -18,9 +18,7 @@ function Home() {
             <br />
             <div className="flex justify-between items-center">
                 <ul className="list-disc pl-5 flex-1">
-                    {routes
-                        .filter((route) => route.description)
-                        .map((route) => (
+                    {routes.map((route) => (route.description &&
                             <li key={route.path}>
                                 <NavLink to={route.path}>
                                     <span className="font-bold">{route.name}</span>
