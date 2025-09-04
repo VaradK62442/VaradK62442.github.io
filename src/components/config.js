@@ -1,8 +1,8 @@
 const routes = [
     { path: "/", name: "Home" },
     { path: "/about", name: "About", description: "An overall summary about me, my interests, and my experiences." },
-    { path: "/experience", name: "Experience", description: "A summary of my professional and personal experiences." },
     { path: "/education", name: "Education", description: "An overview of my University education." },
+    { path: "/experience", name: "Experience", description: "A summary of my professional and personal experiences." },
     { path: "/projects", name: "Projects", description: "A showcase of my personal projects." },
 ]
 

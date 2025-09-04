@@ -3,10 +3,9 @@ function Courses({ year, cs, maths }) {
         <div>
             <br />
             <h3 className="text-1xl font-semibold mb-4 text-center">Year {year}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
-                {/* Computer Science List */}
-                <div>
-                    <h4 className="mb-2 text-center">Computer Science:</h4>
+            <div className="grid grid-cols-2 gap-x-4 justify-items-center">
+                <div className="bg-crimson text-white p-4 rounded-lg shadow-md flex flex-col justify-center w-full">
+                    <h4 className="mb-4 text-center font-bold">Computer Science:</h4>
                     <ul className="list-disc pl-5">
                         {cs.map((course) => (
                             <li className="relative group" key={course.name}>
@@ -20,16 +19,14 @@ function Courses({ year, cs, maths }) {
                         ))}
                     </ul>
                 </div>
-
-                {/* Mathematics List */}
-                <div>
-                    <h4 className="mb-2 text-center">Mathematics:</h4>
+                <div className="bg-crimson text-white p-4 rounded-lg shadow-md flex flex-col justify-center w-full">
+                    <h4 className="mb-4 text-center font-bold">Mathematics:</h4>
                     <ul className="list-disc pl-5">
                         {maths.map((course) => (
                             <li className="relative group" key={course.name}>
                                 {course.name}
                                 {course.details && (
-                                    <div className="absolute top-1/2 left-full transform -translate-y-1/2 ml-4 w-64 p-2 bg-purple-600 text-white text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                                    <div className="absolute top-1/2 left-[103%] transform -translate-y-1/2 ml-6 w-64 p-2 bg-purple-600 text-white text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                                         {course.details}
                                     </div>
                                 )}
