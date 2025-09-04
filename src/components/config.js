@@ -232,7 +232,7 @@ const tools = [
     {name: "LEAN", link: "https://lean-lang.org/"},
     {name: "Gurobi", link: "https://www.gurobi.com/"},
     {name: "React", link: "https://react.dev/"},
-    {name: "Playwright", link: "https://playwright.dev/python/docs/intro"},
+    {name: "Playwright", link: "https://playwright.dev/python"},
     {name: "Godot", link: "https://godotengine.org/"},
     {name: "ANTLR", link: "https://www.antlr.org/"},
     {name: "Ultralytics", link: "https://docs.ultralytics.com/"},

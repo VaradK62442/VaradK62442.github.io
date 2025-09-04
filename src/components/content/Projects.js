@@ -45,7 +45,12 @@ function Projects() {
 
     return (
         <div className="container mx-auto px-4 py-6">
-            <h1 className="text-2xl font-bold mb-6">Projects</h1>
+            <div className="flex items-center justify-between mb-6">
+                <h1 className="text-2xl font-bold">Projects</h1>
+                <div className="bg-purple-600 border-4 border-purple-300 border-dashed rounded-md p-2 text-purple-900 text-center">
+                    <span className="font-bold text-sm">Click to read more!</span>
+                </div>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {projects.map((project) => (
                     <ProjectTile

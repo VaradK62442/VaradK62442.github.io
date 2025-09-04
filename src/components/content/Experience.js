@@ -11,7 +11,6 @@ function Experience() {
         if (activeIndex === index) {
             setActiveIndex(null);
             setMarkdownContent("");
-            window.history.replaceState(null, null, window.location.pathname);
         } else {
             setActiveIndex(index);
             if (experiences[index].description === "") {
@@ -21,7 +20,6 @@ function Experience() {
                 const text = await response.text();
                 setMarkdownContent(text);
             }
-            window.history.replaceState(null, null, `#${experiences[index].id}`);
         }
     }
 
@@ -37,8 +35,12 @@ function Experience() {
 
     return (
         <div className="container mx-auto px-4 py-6">
-            <h1 className="text-2xl font-bold">Experiences</h1>
-            <h4 className="mb-6">(click to expand)</h4>
+            <div className="flex items-center justify-between mb-6">
+                <h1 className="text-2xl font-bold">Experiences</h1>
+                <div className="bg-purple-600 border-4 border-purple-300 border-dashed rounded-md p-2 text-purple-900 text-center">
+                    <span className="font-bold text-sm">Click to read more!</span>
+                </div>
+            </div>
             <ul className="space-y-4">
                 {experiences.map((experience, index) => (
                     <li key={index} id={experience.id} className="border border-crimson rounded-md shadow-md">
