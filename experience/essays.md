@@ -1,0 +1,5 @@
+Throughout high school, I loved learned about varaious topics in maths and computing that took my interest, and decided to write short essays about these topics as a way to make the ideas clearer in my head, as well as to exposit these areas of computing and maths that I found interesting so that they might reach a wider audience.
+
+<br>
+
+I've written several of these essays and published them on my <u><a href="https://medium.com/@varadkulk123" target="_blank" rel="noopener noreferrer">Medium page</a></u>, but my favourites have to be <u><a href="https://medium.com/@varadkulk123/methods-of-approximating-pi-d61fcb042ad1" target="_blank" rel="noopener noreferrer">Methods of approximating pi</a></u> and <u><a href="https://medium.com/@varadkulk123/an-analysis-of-resource-dsitribution-in-catan-d8d91b518e71" target="_blank" rel="noopener noreferrer">Resource Distribution in Catan</a></u>. I really enjoyed both researching, writing, and showing off these essays. I like how both the computer science and mathematics sides come together nicely to produce very interesting results.

@@ -6,4 +6,4 @@ As I said, I love the rigorous and logical framework LEAN provides for mathemati
 
 <br>
 
-<u><a href="https://github.com/VaradK62442/lean" target="_blank" rel="noopener noreferrer">This</a></u> repository serves as a place for me to follow the <u><a href="https://leanprover.github.io/theorem_proving_in_lean4/" target="_blank" rel="noopener noreferrer">Theorem Proving in LEAN</a></u> tutorial and learn the language for my dissertation.
+This repository serves as a place for me to follow the <u><a href="https://leanprover.github.io/theorem_proving_in_lean4/" target="_blank" rel="noopener noreferrer">Theorem Proving in LEAN</a></u> tutorial and learn the language for my dissertation.

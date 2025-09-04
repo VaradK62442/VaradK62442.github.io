@@ -1,0 +1,1 @@
+I have a small set of scripts to fetch some basic data (upcoming birthdays from my Notion calendar, and the weather), bundle it into an email and send it to me each day.
