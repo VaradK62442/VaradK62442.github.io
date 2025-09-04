@@ -11,17 +11,19 @@ function NavBar() {
             const currentIndex = routes.findIndex(route => route.path === currentPath);
 
             if (event.key === "ArrowRight" || event.key === "l") {
-                // Navigate to the next route
                 const nextIndex = (currentIndex + 1) % routes.length;
                 navigate(routes[nextIndex].path);
             } else if (event.key === "ArrowLeft" || event.key === "h") {
-                // Navigate to the previous route
                 const prevIndex = (currentIndex - 1 + routes.length) % routes.length;
                 navigate(routes[prevIndex].path);
             } else if (event.key === "j") {
                 window.scrollBy({ top: 75, behavior: "smooth" });
             } else if (event.key === "k") {
                 window.scrollBy({ top: -75, behavior: "smooth" });
+            } else if (event.key === "g" && event.repeat) {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            } else if (event.key === "G") {
+                window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
             }
         };
 
