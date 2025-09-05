@@ -1,0 +1,5 @@
+I use <u><a href="https://www.notion.com/" target="_blank" rel="noopener noreferrer">Notion</a></u> pretty significantly to manage my calendar, to-do lists, and university work so to ease my workflow I implemented a few automations using the Notion API.
+
+<br>
+
+The first of these is a daily journal automation that creates a page on my daily journal tracker each day, which makes the process of keeping a daily journal much smoother for me. Another automation is a program to add items to my games library. This keeps track of all the games I have, and it is much easier for me to quickly run a program to add a new game than to manually go into my Notion page and add it myself. A third automation I made is a script to generate my University timetable based on some starting inputs. Given a set of courses and specifications on how often they repeat, the script will fill my University timetable with the courses I have, making it easy for me to refer to and use.

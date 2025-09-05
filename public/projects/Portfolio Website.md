@@ -1,0 +1,1 @@
+The main motive for this website was to present my work, my education, my experiences, and most importantly, things that I am passionate about. I intend for this website to showcase my software development and academic efforts.

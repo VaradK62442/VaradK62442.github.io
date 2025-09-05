@@ -1,14 +1,41 @@
-import { NavLink } from "react-router-dom";
-
-const routes = [
-    { path: "/", name: "Home" },
-    { path: "/about", name: "About" },
-    { path: "/projects", name: "Projects" },
-]
+import { NavLink, useNavigate } from "react-router-dom";
+import { routes } from "./config";
+import { useEffect } from "react";
 
 function NavBar() {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            const currentPath = window.location.pathname;
+            const currentIndex = routes.findIndex(route => route.path === currentPath);
+
+            if (event.key === "ArrowRight" || event.key === "l") {
+                const nextIndex = (currentIndex + 1) % routes.length;
+                navigate(routes[nextIndex].path);
+            } else if (event.key === "ArrowLeft" || event.key === "h") {
+                const prevIndex = (currentIndex - 1 + routes.length) % routes.length;
+                navigate(routes[prevIndex].path);
+            } else if (event.key === "j") {
+                window.scrollBy({ top: 75, behavior: "smooth" });
+            } else if (event.key === "k") {
+                window.scrollBy({ top: -75, behavior: "smooth" });
+            } else if (event.key === "g" && event.repeat) {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            } else if (event.key === "G") {
+                window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [navigate]);
+
     return (
-        <nav class="bg-blue text-white py-2 shadow">
+        <nav class="bg-blue-400 text-white py-2 shadow">
             <ul class="flex space-x-4 justify-center">
                 {routes.map((route) => (
                         <li key={route.path} class="hover:text-crimson">
@@ -32,3 +59,4 @@ function NavBar() {
 }
 
 export default NavBar;
+export { routes };
