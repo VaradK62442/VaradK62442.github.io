@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { useLocation } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import { experiences } from "../config";
@@ -6,32 +7,33 @@ import { experiences } from "../config";
 function Experience() {
     const [activeIndex, setActiveIndex] = useState(null);
     const [markdownContent, setMarkdownContent] = useState("");
+    const location = useLocation();
 
-    const toggleDropdown = async (index) => {
-        if (activeIndex === index) {
-            setActiveIndex(null);
-            setMarkdownContent("");
-        } else {
-            setActiveIndex(index);
-            if (experiences[index].description === "") {
-                setMarkdownContent("...");
+    const toggleDropdown = useCallback(
+        async (index) => {
+            if (activeIndex === index) {
+                setActiveIndex(null);
+                setMarkdownContent("");
             } else {
-                const response = await fetch("/experience/" + experiences[index].id + ".md");
-                const text = await response.text();
-                setMarkdownContent(text);
+                setActiveIndex(index);
+                if (experiences[index].description === "") {
+                    setMarkdownContent("...");
+                } else {
+                    const response = await fetch("/experience/" + experiences[index].id + ".md");
+                    const text = await response.text();
+                    setMarkdownContent(text);
+                }
             }
-        }
-    }
+        },
+        [activeIndex]
+    );
 
     useEffect(() => {
-        const hash = window.location.hash.substring(1);
-        if (hash) {
-            const index = experiences.findIndex(exp => exp.id === hash);
-            if (index !== -1) {
-                setActiveIndex(index);
-            }
+        if (location.state && location.state.selectedIndex !== undefined) {
+            const selectedIndex = location.state.selectedIndex;
+            toggleDropdown(selectedIndex);
         }
-    }, []);
+    }, [location.state, toggleDropdown]);
 
     return (
         <div className="container mx-auto px-4 py-6">

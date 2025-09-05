@@ -13,7 +13,9 @@ function About() {
                 image = "pfp.JPG"
                 position = "left"
             />
-            <NavLink to="/experience#ugr-driverless">
+            <NavLink to="/experience"
+                state={{ selectedIndex: 0 }}
+            >
                 <ParagraphSection
                     paragraph = {
                         "I was the Head Software Engineer for the University of Glasgow Racing's Driverless sub-team. " +
@@ -35,7 +37,9 @@ function About() {
                 image = "turingMachine.png"
                 position = "left"
             />
-            <NavLink to="/experience#stable-matching-research">
+            <NavLink to="/experience"
+                state={{ selectedIndex: 2 }}
+            >
                 <ParagraphSection
                     paragraph = {
                         "I have also worked on researching into various Stable Matching problems. This has grown my " +
@@ -46,7 +50,9 @@ function About() {
                     position = "right"
                 />
             </NavLink>
-            <NavLink to="/experience#essays">
+            <NavLink to="/experience"
+                state={{ selectedIndex: 6 }}
+            >
                 <ParagraphSection
                     paragraph = {
                         "I have previously written essays on various topics of interest in mathematics and computing. " +
