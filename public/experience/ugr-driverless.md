@@ -32,3 +32,13 @@ The Driverless side of UGRacing creates driverless software for an autonomous dr
 <br>
 
 As for the technical details of the software, we use <u><a href="https://www.ros.org/" target="_blank" rel="noopener noreferrer">ROS2</a></u> as our main framework to allow communication between sensors. We use a <u><a href="https://www.stereolabs.com/en-gb" target="_blank" rel="noopener noreferrer">ZED</a></u> camera, and a <u><a href="https://www.robosense.ai/en/IncrementalComponents/Helios" target="_blank" rel="noopener noreferrer">32 Laser LiDAR</a></u> as our main sources of perception. We additionally integrated a <u><a href="https://www.u-blox.com/en/product/c94-m8p" target="_blank" rel="noopener noreferrer">Differential GPS (DGPS)</a></u> to provide accurate position estimates. We have several ROS nodes in areas of perception, path planning, and control to coordinate information and data, and finally send drive commands to the car. We also employ several different simulators to ensure correctness and reliability of our algorithms. One of my favourite parts of this year was getting to work with and integrate all of these sensors into our system, especially since the LiDAR and DGPS were new, so it was very interesting to be able to play around with them to learn about how they worked and how to best fit them in to the existing software architecture.
+
+<br>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/media/sensor_plate.jpeg" width="60%">
+</div>
+
+<br>
+
+I've worked with several algorithms and ideas through my time, some of my favourites have been <u><a href="https://en.wikipedia.org/wiki/Extended_Kalman_filter" target="_blank" rel="noopener noreferrer">Extended Kalman Filters</a></u>; computer vision using <u><a href="https://opencv.org/" target="_blank" rel="noopener noreferrer">OpenCV</a></u> and other methods; sensor integration with the DGPS, the LiDAR, and using the <u><a href="https://www.stereolabs.com/en-gb/developers/release" target="_blank" rel="noopener noreferrer">ZED SDK</a></u> for the binocular camera; control algorithms such as a <u><a href="https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller" target="_blank" rel="noopener noreferrer">PID controller</a></u> and much more. Working with these algorithms and technologies has grown my love of robotics and I've enjoyed working at the intersection of software and hardware.
