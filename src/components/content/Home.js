@@ -20,7 +20,7 @@ function Home() {
                 <ul className="list-disc pl-5 flex-1">
                     {routes.map((route) => (route.description &&
                             <li key={route.path}>
-                                <NavLink to={route.path}>
+                                <NavLink to={route.path} className="hover:underline">
                                     <span className="font-bold">{route.name}</span>
                                 </NavLink>
                                 : {route.description}
