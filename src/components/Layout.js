@@ -20,7 +20,7 @@ function Layout({ children }) {
                 {children}
                 <div class="mt-6 grid grid-cols-4 gap-4">
                     <Social
-                        icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        icon="/media/linkedin.png"
                         link="https://www.linkedin.com/in/varad-kulkarni-344b39206/"
                         title="LinkedIn"
                         description="Connect with me on LinkedIn."
