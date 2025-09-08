@@ -13,6 +13,7 @@ function Home() {
                     }
                     image = "pfp.JPG"
                     position = "left"
+                    has_link = {true}
                 />
             </NavLink>
             <br />

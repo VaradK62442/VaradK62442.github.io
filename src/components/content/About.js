@@ -26,6 +26,7 @@ function About() {
                     }
                     image = "ugr.jpeg"
                     position = "right"
+                    has_link = {true}
                 />
             </NavLink>
             <ParagraphSection
@@ -48,6 +49,7 @@ function About() {
                     }
                     image = "spapIP.png"
                     position = "right"
+                    has_link = {true}
                 />
             </NavLink>
             <NavLink to="/experience"
@@ -62,6 +64,7 @@ function About() {
                     }
                     image = "Mlogo.png"
                     position = "left"
+                    has_link = {true}
                 />
             </NavLink>
         </div>
