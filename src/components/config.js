@@ -51,12 +51,12 @@ const experiences = [
 
 const cs_courses = {
     2: [
-        {"name": "Intro to Object Oriented Programming", "details": ""},
-        {"name": "Algorithmic Foundations", "details": ""},
-        {"name": "Networks and Operating Systems", "details": ""},
-        {"name": "Object Oriented Software Engineering", "details": ""},
-        {"name": "Algorithms and Data Structures", "details": ""},
-        {"name": "Web App Development", "details": ""},
+        {"name": "Intro to Object Oriented Programming", "details": "Program using a strongly typed language, learn ideas that underpin object-oriented programming and apply these concepts to develop small and medium sized software systems."},
+        {"name": "Algorithmic Foundations", "details": "Provide a comprehensive overview of web application development, training skills to design and develop distributed web applications as well as strengthening understanding of context and rationale of distributed systems."},
+        {"name": "Networks and Operating Systems", "details": "Introduce essential concepts in computer networks and operating systems focusing on the underlying concepts, design, and operation of the Internet."},
+        {"name": "Object Oriented Software Engineering", "details": "Learn methods for the design, implementation, testing, and documentation of larger object-oriented programs."},
+        {"name": "Algorithms and Data Structures", "details": "Study fundamental data types and data structures, with design and analysis of algorithms for the manipulation of these structures, and practice implementation and use of these structures and algorithms."},
+        {"name": "Web App Development", "details": "Introduce foundational mathematics required for computer science, train proficiency in their use, and show how they can be applied."},
     ],
     3: [
         {"name": "Algorithmics I", "details": "Involves the study of basic sorting algorithms; the tries data structure; graph basics; graph search and traversal algorithms; basic graph properties; string and text algorithms such as comparison, compression, and searching; problem classes and the P = NP problem; and computability, including the Halting problem, finite state automata, and Turing machines."},
@@ -78,12 +78,12 @@ const cs_courses = {
 
 const maths_courses = {
     2: [
-        {"name": "Multivariable Calculus", "details": ""},
-        {"name": "Linear Algebra", "details": ""},
-        {"name": "Introduction to Real Analysis", "details": ""},
-        {"name": "Mathematical Methods & Modelling", "details": ""},
-        {"name": "Mechanics", "details": ""},
-        {"name": "Groups, Transformations, and Symmetries", "details": ""},
+        {"name": "Multivariable Calculus", "details": "Introduces differentiating and integrating in multiple dimensions and fundamental concepts found in diverse fields such as geometry and physics."},
+        {"name": "Linear Algebra", "details": "Covers the fundamentals of linear algebra that are applicable throughout science and engineering."},
+        {"name": "Introduction to Real Analysis", "details": "Provides a first introduction to real analysis, the common thread being the notion of limits."},
+        {"name": "Mathematical Methods & Modelling", "details": "Introduce aspects of the theory and methods used in mathematical modelling."},
+        {"name": "Mechanics", "details": "Introduces the mathematical modelling of mechanical phenomena."},
+        {"name": "Groups, Transformations, and Symmetries", "details": "Covers fundamental concepts in mathematics, such as groups, vector spaces, linear transformations, and symmetries."},
     ],
     3: [
         {"name": "Abstract Algebra", "details": "Involves the study of groups, subgroups, cosets, normal subgroups, quotient groups, homomorphisms, isomorphisms; group actions, the Orbit-Stabiliser theorem; and rings, ideals, fields, polynomial rings, maximal and prime ideals, and Eisentein's criterion."},
