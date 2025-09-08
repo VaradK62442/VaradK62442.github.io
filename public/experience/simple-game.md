@@ -1,4 +1,4 @@
-For the 2024 Do You Have the Guts Hackathon, hosted by the Glasgow University Tech Society, the challenge posed by JP Morgan was to create a 'minimalist' or 'simple' game. In a team of 5, we had 24 hours to come up with an idea, learn an entire game engine, and implement our idea to fulfil this brief. We made <u><a href="https://github.com/VaradK62442/simplegame" target="_blank" rel="noopener noreferrer">Simple Game</a></u>, and won the JP Morgan challenge.
+For the 2024 Do You Have the Guts Hackathon, hosted by the Glasgow University Tech Society, the challenge posed by JP Morgan was to create a 'minimalist' or 'simple' game. In a team of 5, we had 24 hours to come up with an idea, learn an entire game engine, and implement our idea to fulfil this brief. We made <u><a href="https://github.com/VaradK62442/simplegame" target="_blank" rel="noopener noreferrer">Simple Game</a></u>, and <b>won</b> the JP Morgan challenge.
 
 <br>
 
