@@ -10,7 +10,18 @@ function Courses({ year, cs, maths }) {
                         <ul className="list-disc pl-5">
                             {cs.map((course) => (
                                 <li className="relative group" key={course.name}>
-                                    <span className="group-hover:underline">{course.name}</span>
+                                    {course.link ? (
+                                        <a
+                                            href={course.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="group-hover:underline text-white"
+                                        >
+                                            {course.name}
+                                        </a>
+                                    ) : (
+                                        <span className="group-hover:underline">{course.name}</span>
+                                    )}
                                     {course.details && (
                                         <div className="absolute top-1/2 right-[105%] transform -translate-y-1/2 mr-4 w-64 p-2 bg-purple-600 text-white text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none">
                                             {course.details}
@@ -27,7 +38,18 @@ function Courses({ year, cs, maths }) {
                         <ul className="list-disc pl-5">
                             {maths.map((course) => (
                                 <li className="relative group" key={course.name}>
-                                    <span className="group-hover:underline">{course.name}</span>
+                                    {course.link ? (
+                                        <a
+                                            href={course.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="group-hover:underline text-white"
+                                        >
+                                            {course.name}
+                                        </a>
+                                    ) : (
+                                        <span className="group-hover:underline">{course.name}</span>
+                                    )}
                                     {course.details && (
                                         <div className="absolute top-1/2 left-[100%] transform -translate-y-1/2 ml-6 w-64 p-2 bg-purple-600 text-white text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none">
                                             {course.details}
