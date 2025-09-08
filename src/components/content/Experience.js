@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import { experiences } from "../config";
@@ -8,6 +8,7 @@ function Experience() {
     const [activeIndex, setActiveIndex] = useState(null);
     const [markdownContent, setMarkdownContent] = useState("");
     const location = useLocation();
+    const navigate = useNavigate();
 
     const toggleDropdown = useCallback(
         async (index) => {
@@ -19,9 +20,14 @@ function Experience() {
                 if (experiences[index].description === "") {
                     setMarkdownContent("...");
                 } else {
-                    const response = await fetch("/experience/" + experiences[index].id + ".md");
-                    const text = await response.text();
-                    setMarkdownContent(text);
+                    try {
+                        const response = await fetch("/experience/" + experiences[index].id + ".md");
+                        const text = await response.text();
+                        setMarkdownContent(text);
+                    } catch (error) {
+                        console.error("Error fetching markdown content:", error);
+                        setMarkdownContent("Error loading content.");
+                    }
                 }
             }
         },
@@ -29,11 +35,12 @@ function Experience() {
     );
 
     useEffect(() => {
-        if (location.state && location.state.selectedIndex !== undefined) {
-            const selectedIndex = location.state.selectedIndex;
+        const selectedIndex = location.state?.selectedIndex;
+        if (selectedIndex !== undefined && selectedIndex !== activeIndex) {
             toggleDropdown(selectedIndex);
+            navigate(location.pathname, { replace: true });
         }
-    }, [location.state, toggleDropdown]);
+    }, [location, toggleDropdown, activeIndex, navigate]);
 
     return (
         <div className="container mx-auto px-4 py-6">

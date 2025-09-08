@@ -26,13 +26,15 @@ function About() {
                     }
                     image = "ugr.jpeg"
                     position = "right"
+                    has_link = {true}
                 />
             </NavLink>
             <ParagraphSection
                 paragraph={
                     "The areas of computing I'm most interested in are automata, theoretical computing, and robotics. " +
                     "I love the theory behind computer systems and enjoyed learning about finite state automata, and formal specification of programming languages. " +
-                    "As for maths, I love the pure side - algebra, topology, formal logic, etc."
+                    "My love of robotics has grown greatly from my experience in UGR, especially the sensor integration side - I loved working at the center of software and hardware interaction. " + 
+                    "As for maths, I love the pure side - algebra, topology, and anything involving logic and proofs."
                 }
                 image = "turingMachine.png"
                 position = "left"
@@ -48,6 +50,7 @@ function About() {
                     }
                     image = "spapIP.png"
                     position = "right"
+                    has_link = {true}
                 />
             </NavLink>
             <NavLink to="/experience"
@@ -62,6 +65,7 @@ function About() {
                     }
                     image = "Mlogo.png"
                     position = "left"
+                    has_link = {true}
                 />
             </NavLink>
         </div>

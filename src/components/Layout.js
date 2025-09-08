@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
-import Social from "./content/Social"
+import Social from "./content/Social";
 
 function Layout({ children }) {
     return (
-        <div class="bg-blue text-white min-h-screen flex flex-col">
-            <header class="bg-crimson text-white py-4 shadow-md sticky top-0 z-50">
-                <div class="container mx-auto px-4">
+        <div className="bg-blue text-white min-h-screen flex flex-col">
+            <header className="bg-crimson text-white py-4 shadow-md sticky top-0 z-50">
+                <div className="max-w-[90%] mx-auto px-4">
                     <NavLink
                         to="/"
                         className="text-2xl font-bold"
@@ -16,11 +16,11 @@ function Layout({ children }) {
                 </div>
             </header>
             <NavBar />
-            <main class="flex-grow container mx-auto px-4 py-6 max-w-5xl flex flex-col justify-between">
+            <main className="flex-grow max-w-[65%] mx-auto px-4 py-6 flex flex-col justify-between">
                 {children}
-                <div class="mt-6 grid grid-cols-4 gap-4">
+                <div className="mt-6 grid grid-cols-4 gap-4">
                     <Social
-                        icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        icon="/media/linkedin.png"
                         link="https://www.linkedin.com/in/varad-kulkarni-344b39206/"
                         title="LinkedIn"
                         description="Connect with me on LinkedIn."
@@ -45,11 +45,11 @@ function Layout({ children }) {
                     />
                 </div>
             </main>
-            <footer class="bg-crimson py-4 text-center">
+            <footer className="bg-crimson py-4 text-center">
                 <p>&copy; 2025 Varad Kulkarni. All rights reserved.</p>
             </footer>
         </div>
-    )
+    );
 }
 
 export default Layout;

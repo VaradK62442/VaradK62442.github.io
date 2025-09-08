@@ -51,51 +51,51 @@ const experiences = [
 
 const cs_courses = {
     2: [
-        {"name": "Intro to Object Oriented Programming", "details": ""},
-        {"name": "Algorithmic Foundations", "details": ""},
-        {"name": "Networks and Operating Systems", "details": ""},
-        {"name": "Object Oriented Software Engineering", "details": ""},
-        {"name": "Algorithms and Data Structures", "details": ""},
-        {"name": "Web App Development", "details": ""},
+        {"name": "Intro to Object Oriented Programming", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI2001", "details": "Program using a strongly typed language, learn ideas that underpin object-oriented programming and apply these concepts to develop small and medium sized software systems."},
+        {"name": "Algorithmic Foundations", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI2003", "details": "Provide a comprehensive overview of web application development, training skills to design and develop distributed web applications as well as strengthening understanding of context and rationale of distributed systems."},
+        {"name": "Networks and Operating Systems", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI2024", "details": "Introduce essential concepts in computer networks and operating systems focusing on the underlying concepts, design, and operation of the Internet."},
+        {"name": "Object Oriented Software Engineering", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI2008", "details": "Learn methods for the design, implementation, testing, and documentation of larger object-oriented programs."},
+        {"name": "Algorithms and Data Structures", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI2007", "details": "Study fundamental data types and data structures, with design and analysis of algorithms for the manipulation of these structures, and practice implementation and use of these structures and algorithms."},
+        {"name": "Web App Development", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI2021", "details": "Introduce foundational mathematics required for computer science, train proficiency in their use, and show how they can be applied."},
     ],
     3: [
-        {"name": "Algorithmics I", "details": "Involves the study of basic sorting algorithms; the tries data structure; graph basics; graph search and traversal algorithms; basic graph properties; string and text algorithms such as comparison, compression, and searching; problem classes and the P = NP problem; and computability, including the Halting problem, finite state automata, and Turing machines."},
-        {"name": "Programming Languages", "details": "Involves the study of programming paradigms; operational semantics; binding; recursion; types and typechecking; imperative programming; syntactic analysis; variables and lifetime; abstraction; and native code generation."},
-        {"name": "Robotics Foundations", "details": "Involves learning about the Robotics Operating System (ROS2); forward and inverse kinematics; behaviour-based control; vision systems and depth perception; various different perception modalities; and advanced robotics techniques such as SLAM and DeepSLAM."},
-        {"name": "Data Fundamentals", "details": "Involves arrays; tensors; scientific visualisation; computational linear algebra; linear and non-linear optimisation methods; probability and basic statistics; sampling and inference; and time series analysis."},
-        {"name": "Professional Software Development", "details": "Involves the study of agile team organisation; requirements management; change management; software licensing; build, release, and dependency management; continuous integration; behaviour driven development; software architecture; development operations; sustainability; and startup growth engineering."},
-        {"name": "Team Project", "details": "Provides the experience of working on a substantial team based software project, following and applying the tools learned in the Professional Software Development course."},
+        {"name": "Algorithmics I", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4009", "details": "Involves the study of basic sorting algorithms; the tries data structure; graph basics; graph search and traversal algorithms; basic graph properties; string and text algorithms such as comparison, compression, and searching; problem classes and the P = NP problem; and computability, including the Halting problem, finite state automata, and Turing machines."},
+        {"name": "Programming Languages", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4016", "details": "Involves the study of programming paradigms; operational semantics; binding; recursion; types and typechecking; imperative programming; syntactic analysis; variables and lifetime; abstraction; and native code generation."},
+        {"name": "Robotics Foundations", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4076", "details": "Involves learning about the Robotics Operating System (ROS2); forward and inverse kinematics; behaviour-based control; vision systems and depth perception; various different perception modalities; and advanced robotics techniques such as SLAM and DeepSLAM."},
+        {"name": "Data Fundamentals", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4073", "details": "Involves arrays; tensors; scientific visualisation; computational linear algebra; linear and non-linear optimisation methods; probability and basic statistics; sampling and inference; and time series analysis."},
+        {"name": "Professional Software Development", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4015", "details": "Involves the study of agile team organisation; requirements management; change management; software licensing; build, release, and dependency management; continuous integration; behaviour driven development; software architecture; development operations; sustainability; and startup growth engineering."},
+        {"name": "Team Project", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4047", "details": "Provides the experience of working on a substantial team based software project, following and applying the tools learned in the Professional Software Development course."},
     ],
     4: [
-        {"name": "Individual Project", "details": "Provide the experience of undertaking a substantial piece of individual work, involving planning, specification, design, execution, evaluation, presentation, and report-writing."},
-        {"name": "Functional Programming", "details": "Presents the concepts of functional programming using Haskell, applying techniques such as monads, parallelism, metaprogramming, and formal methods."},
-        {"name": "Theory of Computation", "details": "Covers the theory of sequential and concurrent computation, topics including lambda calculus, the pi calculus, the theory of operational semantics, and type systems for both these calculi."},
-        {"name": "Trustworthy Systems", "details": "Covers designing trustworthy systems through formal modelling, verification, and synthesis. Experience modelling systems such as Kripke structures, discrete-time Markov chains, Markov decision processes, and stochastic multiplayer games using the PRISM modelling language."},
-        {"name": "Computational Game Theory", "details": "Investigate mathematical concepts that model strategic interactions, use algorithmic theory to analyse equilibrium solutions, study computational hardness, design mechanisms to incentivise desirable behaviour."},
-        {"name": "Constraint Programming", "details": "Implement constraint programming solutions to a number of combinatorial problems, using a state of the art constraint programming toolkit, as well as cover the fundamental concepts of constraint satisfaction and constraint programming."},
+        {"name": "Individual Project", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4024P", "details": "Provide the experience of undertaking a substantial piece of individual work, involving planning, specification, design, execution, evaluation, presentation, and report-writing."},
+        {"name": "Functional Programming", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4021", "details": "Presents the concepts of functional programming using Haskell, applying techniques such as monads, parallelism, metaprogramming, and formal methods."},
+        {"name": "Theory of Computation", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4072", "details": "Covers the theory of sequential and concurrent computation, topics including lambda calculus, the pi calculus, the theory of operational semantics, and type systems for both these calculi."},
+        {"name": "Trustworthy Systems", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI5123", "details": "Covers designing trustworthy systems through formal modelling, verification, and synthesis. Experience modelling systems such as Kripke structures, discrete-time Markov chains, Markov decision processes, and stochastic multiplayer games using the PRISM modelling language."},
+        {"name": "Computational Game Theory", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI5116", "details": "Investigate mathematical concepts that model strategic interactions, use algorithmic theory to analyse equilibrium solutions, study computational hardness, design mechanisms to incentivise desirable behaviour."},
+        {"name": "Constraint Programming", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI5006", "details": "Implement constraint programming solutions to a number of combinatorial problems, using a state of the art constraint programming toolkit, as well as cover the fundamental concepts of constraint satisfaction and constraint programming."},
     ],
 }
 
 const maths_courses = {
     2: [
-        {"name": "Multivariable Calculus", "details": ""},
-        {"name": "Linear Algebra", "details": ""},
-        {"name": "Introduction to Real Analysis", "details": ""},
-        {"name": "Mathematical Methods & Modelling", "details": ""},
-        {"name": "Mechanics", "details": ""},
-        {"name": "Groups, Transformations, and Symmetries", "details": ""},
+        {"name": "Multivariable Calculus", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS2001", "details": "Introduces differentiating and integrating in multiple dimensions and fundamental concepts found in diverse fields such as geometry and physics."},
+        {"name": "Linear Algebra", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS2004", "details": "Covers the fundamentals of linear algebra that are applicable throughout science and engineering."},
+        {"name": "Introduction to Real Analysis", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS2032", "details": "Provides a first introduction to real analysis, the common thread being the notion of limits."},
+        {"name": "Mathematical Methods & Modelling", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS2033", "details": "Introduce aspects of the theory and methods used in mathematical modelling."},
+        {"name": "Mechanics", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS2034", "details": "Introduces the mathematical modelling of mechanical phenomena."},
+        {"name": "Groups, Transformations, and Symmetries", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS2035", "details": "Covers fundamental concepts in mathematics, such as groups, vector spaces, linear transformations, and symmetries."},
     ],
     3: [
-        {"name": "Abstract Algebra", "details": "Involves the study of groups, subgroups, cosets, normal subgroups, quotient groups, homomorphisms, isomorphisms; group actions, the Orbit-Stabiliser theorem; and rings, ideals, fields, polynomial rings, maximal and prime ideals, and Eisentein's criterion."},
-        {"name": "Metric Spaces and Basic Topology", "details": "Involves the study of metric spaces, continuity, compactness, and the Contraction Mapping theorem; open and closed sets; topological spaces and homeomorphisms; connectedness and path-connectedness; Hausdorff spaces and compactness; and the Heine-Borel theorem."},
-        {"name": "Dynamical Systems", "details": "Involves the study of first and second order dynamical systems; analysing linear and non-linear systems; analysing discrete systems and periodict orbits; and different types of bifurcations."},
-        {"name": "Analysis of Differentiation and Integration", "details": "Invovles the study of continuity; differentiability from first principles; power series, Taylor series, and the Maclaurin expansion; and Riemann integrability."},
+        {"name": "Analysis of Differentiation and Integration", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS4073", "details": "Invovles the study of continuity; differentiability from first principles; power series, Taylor series, and the Maclaurin expansion; and Riemann integrability."},
+        {"name": "Dynamical Systems", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS4074", "details": "Involves the study of first and second order dynamical systems; analysing linear and non-linear systems; analysing discrete systems and periodict orbits; and different types of bifurcations."},
+        {"name": "Abstract Algebra", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS4072", "details": "Involves the study of groups, subgroups, cosets, normal subgroups, quotient groups, homomorphisms, isomorphisms; group actions, the Orbit-Stabiliser theorem; and rings, ideals, fields, polynomial rings, maximal and prime ideals, and Eisentein's criterion."},
+        {"name": "Metric Spaces and Basic Topology", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS4077", "details": "Involves the study of metric spaces, continuity, compactness, and the Contraction Mapping theorem; open and closed sets; topological spaces and homeomorphisms; connectedness and path-connectedness; Hausdorff spaces and compactness; and the Heine-Borel theorem."},
     ],
     4: [
-        {"name": "Galois Theory", "details": "Centres on Galois Theory, mainly focusing on the Galois Correspondence Theorem, relating the structure of fields to the structure of groups, and its applications to polynomials. Covers field extensions, algebraic closure, finite fields, and more."},
-        {"name": "Algebraic and Geometric Topology", "details": "Studies properties of topological spaces preserved under continuous deformations, such as homotopies, in particular the fundamental group used to classify surfaces up to homeomorphism. Also briefly covers the mathematics of knots and braids."},
-        {"name": "Differential Geometry", "details": "Introduces the idea of curvature and the famous Gauss-Bonnet Theorem from a differential point of view, using techniques from calculus and geometry."},
-        {"name": "Topics in Algebra", "details": "Primarily focuses on building tools for classifying certain families of groups, with a highlight on Sylow Theorems for finite groups, free groups, and free abelian groups."},
+        {"name": "Differential Geometry", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS4101", "details": "Introduces the idea of curvature and the famous Gauss-Bonnet Theorem from a differential point of view, using techniques from calculus and geometry."},
+        {"name": "Galois Theory", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS4105", "details": "Centres on Galois Theory, mainly focusing on the Galois Correspondence Theorem, relating the structure of fields to the structure of groups, and its applications to polynomials. Covers field extensions, algebraic closure, finite fields, and more."},
+        {"name": "Topics in Algebra", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS4111", "details": "Primarily focuses on building tools for classifying certain families of groups, with a highlight on Sylow Theorems for finite groups, free groups, and free abelian groups."},
+        {"name": "Algebraic and Geometric Topology", "link": "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS4112", "details": "Studies properties of topological spaces preserved under continuous deformations, such as homotopies, in particular the fundamental group used to classify surfaces up to homeomorphism. Also briefly covers the mathematics of knots and braids."},
     ],
 }
 
@@ -244,4 +244,10 @@ const tools = [
     {name: "Django", link: "https://www.djangoproject.com/"},
 ];
 
-export { routes, experiences, cs_courses, maths_courses, projects, tools };
+const awards = [
+    {title: "3rd place at FSUK", description: "Achieved 3rd place overall at the FS-AI competition as part of the UGRacing Driverless team."},
+    {title: "MacDougall Class Prize", description: "Awarded to the most distinguished student in the Ordinary class of Mathematics at Level 2 on the recommendation of the Head of Subject."},
+    {title: "Lorimer Bursary", description: "Awarded for being one of the top students in Level 1 Mathematics."},
+]
+
+export { routes, experiences, cs_courses, maths_courses, projects, tools, awards };
