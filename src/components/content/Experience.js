@@ -19,21 +19,27 @@ function Experience() {
                 if (experiences[index].description === "") {
                     setMarkdownContent("...");
                 } else {
-                    const response = await fetch("/experience/" + experiences[index].id + ".md");
-                    const text = await response.text();
-                    setMarkdownContent(text);
+                    try {
+                        const response = await fetch("/experience/" + experiences[index].id + ".md");
+                        const text = await response.text();
+                        setMarkdownContent(text);
+                    } catch (error) {
+                        console.error("Error fetching markdown content:", error);
+                        setMarkdownContent("Error loading content.");
+                    }
                 }
             }
         },
         [activeIndex]
     );
 
+    // Handle location.state and call toggleDropdown only once
     useEffect(() => {
-        if (location.state && location.state.selectedIndex !== undefined) {
-            const selectedIndex = location.state.selectedIndex;
+        const selectedIndex = location.state?.selectedIndex;
+        if (selectedIndex !== undefined && selectedIndex !== activeIndex) {
             toggleDropdown(selectedIndex);
         }
-    }, [location.state, toggleDropdown]);
+    }, [location.state, toggleDropdown, activeIndex]);
 
     return (
         <div className="container mx-auto px-4 py-6">
