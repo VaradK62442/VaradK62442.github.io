@@ -119,7 +119,7 @@ const projects = [
         shortDescription: "A simple Rust-based text editor",
         fullDescription: "",
         tools: ["Rust"],
-        github: "https://github.com/VaradK62442/simplegame"
+        github: "https://github.com/VaradK62442/coaster"
     },
     {
         title: "lean",
