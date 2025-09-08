@@ -244,4 +244,10 @@ const tools = [
     {name: "Django", link: "https://www.djangoproject.com/"},
 ];
 
-export { routes, experiences, cs_courses, maths_courses, projects, tools };
+const awards = [
+    {title: "3rd place at FSUK", description: "Achieved 3rd place overall at the FS-AI competition as part of the UGRacing Driverless team."},
+    {title: "MacDougall Class Prize", description: "Awarded to the most distinguished student in the Ordinary class of Mathematics at Level 2 on the recommendation of the Head of Subject."},
+    {title: "Lorimer Bursary", description: "Awarded for being one of the top students in Level 1 Mathematics."},
+]
+
+export { routes, experiences, cs_courses, maths_courses, projects, tools, awards };

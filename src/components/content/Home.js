@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import ParagraphSection from "./ParagraphSection";
-import { routes, tools } from "../config";
+import { routes, tools, awards } from "../config";
 
 function Home() {
     return (
@@ -45,6 +45,17 @@ function Home() {
                         >
                             <span className="font-medium">{tool.name}</span>
                         </a>
+                    ))}
+                </div>
+            </div>
+            <div className="mt-8">
+                <h2 className="text-xl font-bold mb-2 text-center">Awards and Achievements</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    {awards.map((award) => (
+                        <div className="bg-purple-600 p-4 rounded-md shadow-md hover:shadow-lg transition">
+                            <h3 className="text-lg font-bold mb-2">{award.title}</h3>
+                            <p className="text-sm">{award.description}</p>
+                        </div>
                     ))}
                 </div>
             </div>
