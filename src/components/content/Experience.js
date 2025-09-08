@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import { experiences } from "../config";
@@ -8,6 +8,7 @@ function Experience() {
     const [activeIndex, setActiveIndex] = useState(null);
     const [markdownContent, setMarkdownContent] = useState("");
     const location = useLocation();
+    const navigate = useNavigate();
 
     const toggleDropdown = useCallback(
         async (index) => {
@@ -33,13 +34,13 @@ function Experience() {
         [activeIndex]
     );
 
-    // Handle location.state and call toggleDropdown only once
     useEffect(() => {
         const selectedIndex = location.state?.selectedIndex;
         if (selectedIndex !== undefined && selectedIndex !== activeIndex) {
             toggleDropdown(selectedIndex);
+            navigate(location.pathname, { replace: true });
         }
-    }, [location.state, toggleDropdown, activeIndex]);
+    }, [location, toggleDropdown, activeIndex, navigate]);
 
     return (
         <div className="container mx-auto px-4 py-6">
