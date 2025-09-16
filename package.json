@@ -1,7 +1,7 @@
 {
   "name": "varad",
   "version": "0.1.0",
-  "homepage": "https://VaradK62442.github.io",
+  "homepage": "https://varadk62442.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
