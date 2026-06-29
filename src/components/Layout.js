@@ -3,53 +3,50 @@ import NavBar from "./NavBar";
 import Social from "./content/Social";
 
 function Layout({ children }) {
-    return (
-        <div className="bg-blue text-white min-h-screen flex flex-col">
-            <header className="bg-crimson text-white py-4 shadow-md sticky top-0 z-50">
-                <div className="max-w-[90%] mx-auto px-4">
-                    <NavLink
-                        to="/"
-                        className="text-2xl font-bold"
-                    >
-                        Varad Kulkarni
-                    </NavLink>
-                </div>
-            </header>
-            <NavBar />
-            <main className="flex-grow max-w-[65%] mx-auto px-4 py-6 flex flex-col justify-between">
-                {children}
-                <div className="mt-6 grid grid-cols-4 gap-4">
-                    <Social
-                        icon="/media/linkedin.png"
-                        link="https://www.linkedin.com/in/varad-kulkarni-344b39206/"
-                        title="LinkedIn"
-                        description="Connect with me on LinkedIn."
-                    />
-                    <Social
-                        icon="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                        link="https://github.com/VaradK62442"
-                        title="GitHub"
-                        description="Check out my projects and contributions."
-                    />
-                    <Social
-                        icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg"
-                        link="mailto:varadkulk123@gmail.com"
-                        title="Email"
-                        description="Get in touch with me via email."
-                    />
-                    <Social
-                        icon="https://images.icon-icons.com/2389/PNG/512/medium_logo_icon_145071.png"
-                        link="https://medium.com/@varadkulk123"
-                        title="Medium"
-                        description="Check out my blog for essays on various topics."
-                    />
-                </div>
-            </main>
-            <footer className="bg-crimson py-4 text-center">
-                <p>&copy; 2025 Varad Kulkarni. All rights reserved.</p>
-            </footer>
+  return (
+    <div className="bg-blue text-white min-h-screen flex flex-col">
+      <header className="bg-crimson text-white py-4 shadow-md sticky top-0 z-50">
+        <div className="max-w-[90%] mx-auto px-4">
+          <NavLink to="/" className="text-2xl font-bold">
+            Varad Kulkarni
+          </NavLink>
         </div>
-    );
+      </header>
+      <NavBar />
+      <main className="flex-grow max-w-[65%] mx-auto px-4 py-6 flex flex-col justify-between">
+        {children}
+        <div className="mt-6 grid grid-cols-4 gap-4">
+          <Social
+            icon="/media/linkedin.png"
+            link="https://www.linkedin.com/in/varad-kulkarni-344b39206/"
+            title="LinkedIn"
+            description="Connect with me on LinkedIn."
+          />
+          <Social
+            icon="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            link="https://github.com/VaradK62442"
+            title="GitHub"
+            description="Check out my projects and contributions."
+          />
+          <Social
+            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg"
+            link="mailto:varadkulk123@gmail.com"
+            title="Email"
+            description="Get in touch with me via email."
+          />
+          <Social
+            icon="https://images.icon-icons.com/2389/PNG/512/medium_logo_icon_145071.png"
+            link="https://medium.com/@varadkulk123"
+            title="Medium"
+            description="Check out my blog for essays on various topics."
+          />
+        </div>
+      </main>
+      <footer className="bg-crimson py-4 text-center">
+        <p>&copy; 2025 Varad Kulkarni. All rights reserved.</p>
+      </footer>
+    </div>
+  );
 }
 
 export default Layout;
