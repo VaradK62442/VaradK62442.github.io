@@ -298,10 +298,10 @@ const maths_courses = {
   ],
   4: [
     {
-      name: "Differential Geometry",
-      link: "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS4101",
+      name: "Functional Analysis",
+      link: "https://www.gla.ac.uk/coursecatalogue/course/?code=MATHS4103",
       details:
-        "Introduces the idea of curvature and the famous Gauss-Bonnet Theorem from a differential point of view, using techniques from calculus and geometry.",
+        "Be familiar with basic examples of normed linear spaces, prove the Minkowski inequality, deifne the operator norm, define concepts of bounded linear functionals, state and prove Riesz representation theorem for Hilbert spaces, prove and apply spectral theorem for Hilbert spaces.",
     },
     {
       name: "Galois Theory",
