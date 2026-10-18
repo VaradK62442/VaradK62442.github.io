@@ -7,6 +7,7 @@ function About() {
       <ParagraphSection
         paragraph={
           "I am a highly organised and motivated student, with a passion in learning new skills and academic topics. " +
+          "I am currently undertaking a MSc in Mathematics and Foundations of Computer Science at the University of Oxford, with a focus on formal verification. " +
           "I have just finished a BSc (Hons) Computer Science and Mathematics degree at the University of Glasgow, and have achieved a First Class with Honours. " +
           "I love problem solving and enjoy teaching and leading others."
         }
@@ -29,7 +30,7 @@ function About() {
       </NavLink>
       <ParagraphSection
         paragraph={
-          "The areas of computing I'm most interested in are automata, theoretical computing, and robotics. " +
+          "The areas of computing I'm most interested in are formal verification, automate, and robotics. " +
           "I love the theory behind computer systems and enjoyed learning about finite state automata, and formal specification of programming languages. " +
           "My love of robotics has grown greatly from my experience in UGR, especially the sensor integration side - I loved working at the center of software and hardware interaction. " +
           "As for maths, I love the pure side - algebra, topology, and anything involving logic and proofs."

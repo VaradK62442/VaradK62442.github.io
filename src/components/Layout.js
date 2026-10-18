@@ -43,7 +43,7 @@ function Layout({ children }) {
         </div>
       </main>
       <footer className="bg-crimson py-4 text-center">
-        <p>&copy; 2025 Varad Kulkarni. All rights reserved.</p>
+        <p>&copy; 2026 Varad Kulkarni. All rights reserved.</p>
       </footer>
     </div>
   );

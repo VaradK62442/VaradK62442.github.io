@@ -23,6 +23,9 @@ const routes = [
   },
 ];
 
+const bio = "Hi, I'm Varad Kulkarni, currently a Masters student at the University of Oxford, studying Mathematics and Foundations of Computer Science.\n" +
+            "This website is a personal portfolio to show off things I've done, things I'm working on, and generally things that I'm passionate about!\n"
+
 const experiences = [
   {
     id: "ugr-driverless",
@@ -189,6 +192,44 @@ const cs_courses = {
         "Implement constraint programming solutions to a number of combinatorial problems, using a state of the art constraint programming toolkit, as well as cover the fundamental concepts of constraint satisfaction and constraint programming.",
     },
   ],
+  5: [
+    {
+      name: "Computational Game Theory",
+      link: "https://www.cs.ox.ac.uk/teaching/courses/2026-2027/cgt/",
+      details:
+        "Understand concepts of decision-making under uncertainty; understand key models of non-cooperative game theory; understand principles of congestion games; understand the concept of the price of anarchy."
+    },
+    {
+      name: "Categories, Proofs, and Processes",
+      link: "https://www.cs.ox.ac.uk/teaching/courses/2026-2027/catsproofsprocs/",
+      details: "Master basic concepts and methods of categories; understand concepts of functoriality, naturality, and universality; understand the connections between categories and logic focusing on the Curry-Howard isomorphism."
+    },
+    {
+      name: "Computer-Aided Formal Verification",
+      link: "https://www.cs.ox.ac.uk/teaching/courses/2026-2027/computeraidedverification/",
+      details: "Understand modelling sequential and parallel systems; understand temporal logics such as LTL, CTL, and CTL*; understand counterexamples, witnesses, and symbolic model checking."
+    },
+    {
+      name: "Quantum Processes and Computation",
+      link: "https://www.cs.ox.ac.uk/teaching/courses/2026-2027/quantum/",
+      details: "Understand basic quantum mechanics, high-level structure of most well-known quantum algorithms, as well as important protocols; basic understanding of SOTA techniques for quantum compilation and classical simulation of quantum computing."
+    },
+    {
+      name: "Automata, Logic, and Games",
+      link: "https://www.cs.ox.ac.uk/teaching/courses/2026-2027/automatalogicgames/",
+      details: "Understand Buchi automata; use LTL to describe behavioural properties; use S1S to define omega-regular languages; explain property-checking games; describe the Guarded Fragment and the Guarded Negation Fragment of FOL."
+    },
+    {
+      name: "Foundations of Self-Programming Agents",
+      link: "https://www.cs.ox.ac.uk/teaching/courses/2026-2027/foundagent/",
+      details: "Appreciate and discuss concepts at the base of reasoning about actions, planning, and program synthesis; apply program synthesis algorithms to diverse contexts; use concepts and techniques to devise forms of self-programming capabilities."
+    },
+    {
+      name: "Advanced Algorithmic Game Theory",
+      link: "https://www.cs.ox.ac.uk/teaching/courses/2026-2027/AAGT/",
+      details: "Formulate real-world problems as game-theoretic models; design and prove properties of incentive-compatible mechanisms; design and analyse optimal auctions; apply approximatiton algorithms to address hard algorithmic game theory problems."
+    },
+  ]
 };
 
 const maths_courses = {
@@ -281,6 +322,13 @@ const maths_courses = {
         "Studies properties of topological spaces preserved under continuous deformations, such as homotopies, in particular the fundamental group used to classify surfaces up to homeomorphism. Also briefly covers the mathematics of knots and braids.",
     },
   ],
+  5: [
+    {
+      name: "Axiomatic Set Theory",
+      link: "https://courses.maths.ox.ac.uk/course/view.php?id=6639",
+      details: "Understand the cumulative hierarchy of sets and the consistency of the Axiom of Foundation; understand Levy's Reflection Principle; understand Gödel's inner model of constructible sets."
+    }
+  ]
 };
 
 const projects = [
@@ -436,19 +484,24 @@ const tools = [
 
 const awards = [
   {
-    title: "3rd place at FSUK",
+    title: "Class Prize for Combined Honours",
     description:
-      "Achieved 3rd place overall at the FS-AI competition as part of the UGRacing Driverless team.",
+      "Awarded for achievements and performance in Computer Science at Level 4."
   },
   {
-    title: "MacDougall Class Prize",
+    title: "MacDougall Class Prize - Level 2, 3, 4",
     description:
-      "Awarded to the most distinguished student in the Ordinary class of Mathematics at Level 2 on the recommendation of the Head of Subject.",
+      "Awarded to the most distinguished student in the Ordinary class of Mathematics at Level 2, 3, and 4 on the recommendation of the Head of Subject.",
   },
   {
     title: "Lorimer Bursary",
     description:
       "Awarded for being one of the top students in Level 1 Mathematics.",
+  },
+  {
+    title: "3rd place at FSUK with UGRacing Driverless",
+    description:
+      "Achieved 3rd place overall at the FS-AI competition as part of the UGRacing Driverless team.",
   },
 ];
 
@@ -460,4 +513,5 @@ export {
   projects,
   tools,
   awards,
+  bio
 };

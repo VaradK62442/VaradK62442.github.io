@@ -1,22 +1,20 @@
 import { NavLink } from "react-router-dom";
 import ParagraphSection from "./ParagraphSection";
-import { routes, tools, awards } from "../config";
+import { routes, tools, awards, bio } from "../config";
 
 function Home() {
   return (
     <div>
       <NavLink to="/about">
         <ParagraphSection
-          paragraph={
-            "Hi, I'm Varad Kulkarni, currently an undergraduate student at the University of Glasgow, studying Computer Science and Mathematics.\n" +
-            "This website is a personal portfolio to show off things I've done, things I'm working on, and generally things that I'm passionate about!\n"
-          }
+          paragraph={bio}
           image="pfp.JPG"
           position="left"
           has_link={true}
         />
       </NavLink>
       <br />
+
       <div className="flex justify-between items-center">
         <ul className="list-disc pl-5 flex-1">
           {routes.map(
@@ -39,6 +37,21 @@ function Home() {
         </div>
       </div>
       <br />
+
+      <div className="mt-8">
+        <h2 className="text-xl font-bold mb-2 text-center">
+          Awards and Achievements
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          {awards.map((award) => (
+            <div className="bg-purple-600 p-4 rounded-md shadow-md hover:shadow-lg transition">
+              <h3 className="text-lg font-bold mb-2">{award.title}</h3>
+              <p className="text-sm">{award.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="mt-8">
         <h2 className="text-xl font-bold mb-2 text-center">
           Tools, Languages, and Frameworks
@@ -53,19 +66,6 @@ function Home() {
             >
               <span className="font-medium">{tool.name}</span>
             </a>
-          ))}
-        </div>
-      </div>
-      <div className="mt-8">
-        <h2 className="text-xl font-bold mb-2 text-center">
-          Awards and Achievements
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {awards.map((award) => (
-            <div className="bg-purple-600 p-4 rounded-md shadow-md hover:shadow-lg transition">
-              <h3 className="text-lg font-bold mb-2">{award.title}</h3>
-              <p className="text-sm">{award.description}</p>
-            </div>
           ))}
         </div>
       </div>
