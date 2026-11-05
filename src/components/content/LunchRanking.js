@@ -7,7 +7,7 @@ function LunchRanking() {
         paragraph={
           "Throughout my time at the University of Oxford, I have been visiting various different colleges for lunch. " +
           "This page serves as a little ranking of my personal experience having lunch at each college. " +
-          "Below is a (lighthearted and friendly) Top 5 ranking, as well as a complete list of all colleges I have visited, in order." +
+          "Below is a (lighthearted and friendly) Top 5 ranking, as well as a complete list of all colleges I have visited, in order. " +
           "I should note I have not had a bad lunch experience at any college, but there must be some order imposed."
         }
         image="UniOxfordLogo.jpg"
