@@ -5,6 +5,7 @@ import About from "./content/About";
 import Education from "./content/Education";
 import Experience from "./content/Experience";
 import Projects from "./content/Projects";
+import LunchRanking from "./content/LunchRanking"
 
 function AppRoutes() {
   return (
@@ -49,6 +50,14 @@ function AppRoutes() {
               <Projects />
             </Layout>
           }
+        />
+        <Route
+        path="/lunch"
+          element={
+            <Layout>
+              <LunchRanking />
+            </Layout>
+        }
         />
       </Routes>
     </Router>

@@ -21,6 +21,11 @@ const routes = [
     name: "Projects",
     description: "A showcase of my personal projects.",
   },
+  {
+    path: "/lunch",
+    name: "Lunch Ranking",
+    description: ""
+  }
 ];
 
 const bio = "Hi, I'm Varad Kulkarni, currently a Masters student at the University of Oxford, studying Mathematics and Foundations of Computer Science.\n" +
