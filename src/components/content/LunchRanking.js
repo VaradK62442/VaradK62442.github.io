@@ -33,6 +33,7 @@ function LunchRanking() {
               Colleges not listed above:
               <ul className="list-disc pl-5">
                 <li>Exeter (1)</li>
+                <li>Reuben (1)</li>
               </ul>
             </div>
           </div>
@@ -56,6 +57,7 @@ function LunchRanking() {
               <li>Kellogg</li>
               <li>Hertford</li>
               <li>St. Hilda's</li>
+              <li>Reuben</li>
             </ul>
           </div>
         </div>
